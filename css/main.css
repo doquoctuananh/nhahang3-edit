@@ -1159,8 +1159,9 @@ header.header-fixed .wrap-menu-header .main_menu li .mega-menu a {
 }
 
 .btn2:hover {
-  background-color: #ec1d25;
+  background-color: #0b3d91;
   color: white;
+  transition: background-color 180ms ease;
 }
 
 
