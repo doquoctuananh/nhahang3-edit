@@ -2953,14 +2953,14 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 -----------------------------------------------------------
 */
 .tit1 {
-	font-family: Poppins;
+	font-family: 'Noto Serif', Georgia, 'Times New Roman', Times, serif;
 	font-weight: 700;
 	font-size: 90px;
 	line-height: 1.1;
 	color: white;
-	text-transform: uppercase;
-	letter-spacing: 10px;
-	word-spacing: 10px;
+	text-transform: none;
+	letter-spacing: 0.4px;
+	word-spacing: normal;
 }
 
 .tit2 {
@@ -2971,24 +2971,24 @@ TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT TEXT
 }
 
 .tit3 {
-	font-family: Poppins;
+	font-family: 'Noto Serif', Georgia, 'Times New Roman', Times, serif;
 	font-weight: 700;
 	font-size: 50px;
 	line-height: 1.2;
 	color: #222222;
-	text-transform: uppercase;
-	letter-spacing: 6px;
+	text-transform: none;
+	letter-spacing: 0.4px;
 }
 
 .tit4 {
-	font-family: Poppins;
+	font-family: 'Noto Serif', Georgia, 'Times New Roman', Times, serif;
 	font-weight: 700;
 	font-size: 50px;
 	line-height: 1.2;
 	color: white;
-	text-transform: uppercase;
-	letter-spacing: 10px;
-	word-spacing: 6px;
+	text-transform: none;
+	letter-spacing: 0.4px;
+	word-spacing: normal;
 }
 
 .tit5 {

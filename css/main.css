@@ -47,6 +47,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
 
 @font-face {
   font-family: Montserrat-Regular;
@@ -398,6 +399,51 @@ header.header-fixed .wrap-menu-header .main_menu li a.active {
 }
 
 /* Custom: Large serif title for the Title Page (Thư viện Tri thức Logistics Toàn cầu) */
+
+
+/* Global serif font override for primary text elements (preserves icon fonts) */
+body, html, p, a, span, li, h1, h2, h3, h4, h5, h6,
+button, input, select, textarea,
+.txt4, .txt5, .txt9, .txt12, .txt13, .txt14, .tit1, .tit2, .tit3, .tit5 {
+  font-family: 'Noto Serif', Georgia, 'Times New Roman', Times, serif !important;
+}
+
+/* Ensure icon font families are preserved (don't inherit site serif) */
+.fa {
+  font-family: 'FontAwesome' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="ti-"], [class*=" ti-"] {
+  font-family: 'themify' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="ion-"], [class*=" ion-"] , .ion, .ionicons {
+  font-family: 'Ionicons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 .bg-title-page .tit6 {
   font-family: 'Playfair Display', 'Times New Roman', Times, Georgia, serif;
   font-size: 48px;
