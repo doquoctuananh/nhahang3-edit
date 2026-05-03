@@ -46,6 +46,7 @@ Input, textarea : 14px/1.6 '', Arial, sans-serif;
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,700');
 
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@300;400;700&display=swap');
 
 @font-face {
   font-family: Montserrat-Regular;
@@ -351,6 +352,38 @@ input[type="date" i] {
     height: 35px;
 }
 
+/* ------------------------- */
+/* Active main menu styling  */
+/* ------------------------- */
+.wrap-menu-header .main_menu li a {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+  font-weight: 300; /* thin serif */
+  color: #ffffff !important; /* white by default */
+  text-decoration: none;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: color 0.25s, border-color 0.25s;
+}
+
+.wrap-menu-header .main_menu li a.active {
+  color: #ffffff !important;
+  border-bottom-color: rgba(255,255,255,0.6); /* subtle white underline */
+}
+
+.wrap-menu-header .main_menu li a:focus {
+  outline: none;
+}
+
+/* When header becomes fixed on scroll, make header menu text black for contrast */
+header.header-fixed .wrap-menu-header .main_menu li a {
+  color: #000000 !important; /* black on scroll */
+}
+
+header.header-fixed .wrap-menu-header .main_menu li a.active {
+  color: #000000 !important;
+  border-bottom-color: rgba(0,0,0,0.6) !important;
+}
+
 
 
 /*[ Select2 ]
@@ -362,6 +395,23 @@ input[type="date" i] {
   display: block;
     max-width: 100%;
     width: auto !important;
+}
+
+/* Custom: Large serif title for the Title Page (Thư viện Tri thức Logistics Toàn cầu) */
+.bg-title-page .tit6 {
+  font-family: 'Playfair Display', 'Times New Roman', Times, Georgia, serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.1;
+  letter-spacing: 0.5px;
+  position: relative;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .bg-title-page .tit6 {
+    font-size: 32px;
+  }
 }
 
 /*[ Select ]
@@ -589,6 +639,69 @@ input[type="date" i] {
   color: #ec1d25;
   text-decoration: none;
 }
+
+/* Mega submenu for Thư viện (hover to reveal) */
+.has-mega { position: relative; }
+.has-mega > a { display: inline-flex; align-items: center; }
+.has-mega .caret { margin-left: 6px; font-size: 12px; }
+.mega-menu {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px; /* shorter width per request */
+  max-width: 90vw;
+  background: #001f3f; /* navy background */
+  color: #ffffff;
+  box-shadow: 0 6px 30px rgba(0,0,0,0.12);
+  padding: 8px 12px;
+  display: none;
+  z-index: 1200;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.mega-row { display: flex; gap: 16px; align-items: flex-start; }
+.mega-col { flex: 1 1 100%; }
+.mega-col h4 { font-size: 15px; margin-bottom: 8px; color: #ffffff; }
+.mega-col ul { list-style: none; padding: 0; margin: 0; }
+.mega-col ul li a { color: #ffffff; display: block; padding: 6px 0; font-size: 14px; font-weight: 500; }
+.mega-col ul li a:hover { color: #ffd166; }
+
+/* Remove default container side padding inside the mega menu so width matches content */
+.mega-menu .container { padding-left: 0; padding-right: 0; max-width: none; }
+
+@media (min-width: 993px) {
+  .has-mega:hover > .mega-menu { display: block; }
+}
+
+@media (max-width: 992px) {
+  .mega-menu { position: static; width: 100%; box-shadow: none; padding: 12px 15px; display: none; }
+  .has-mega.open > .mega-menu { display: block; }
+  .mega-row { flex-direction: column; gap: 12px; }
+}
+
+/* show when explicitly opened via JS click */
+.has-mega.open > .mega-menu { display: block; }
+
+/* Keep mega menu readable when header becomes fixed (scroll) */
+header.header-fixed .mega-menu {
+  background: #001f3f !important;
+  color: #ffffff !important;
+}
+header.header-fixed .mega-menu a {
+  color: #ffffff !important;
+}
+header.header-fixed .mega-menu .mega-col h4 {
+  color: #ffffff !important;
+}
+
+/* Stronger selectors to ensure mega-menu links stay white in all header states */
+.wrap-menu-header .main_menu li .mega-menu,
+.wrap-menu-header .main_menu li .mega-menu a,
+header.header-fixed .wrap-menu-header .main_menu li .mega-menu a {
+  color: #ffffff !important;
+}
+.wrap-menu-header .main_menu li .mega-menu a { text-decoration: none; }
 
 /* ------------------------------------ */
 .sub_menu {
@@ -1424,12 +1537,224 @@ body {padding-right: 0px !important;}
   padding-left: 15px;
   padding-right: 15px;
   background-repeat: no-repeat;
-  background-position: center 0;
-  background-size: cover;
+  background-position: center center;
+  /* slightly enlarge image horizontally on large screens to reduce side gaps */
+  background-size: 110% auto;
+  /* fallback background color to avoid empty-looking gaps */
+  background-color: #000;
+  position: relative;
+  overflow: hidden;
+}
+
+/* dark overlay for bg-title-page */
+.bg-title-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.45);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Stack title above badges in this section (fix inline layout) */
+.bg-title-page.flex-c-m {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Adjustments for different screen sizes */
+@media (max-width: 1200px) {
+  .bg-title-page {
+    background-size: 100% auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .bg-title-page {
+    /* keep full image visible on small screens */
+    background-size: contain;
+    background-position: center top;
+  }
 }
 
 @media (max-width: 576px) {
   .bg-title-page .tit6 {font-size: 30px;}
+}
+
+/* Title badges (pills) displayed under the main title */
+.title-badges {
+  margin-top: 18px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+}
+.title-badges .pill {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.18);
+  border: 1px solid rgba(255,255,255,0.22);
+  color: #ffffff;
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.35);
+}
+
+/* Individual pill color variants */
+.title-badges .pill:nth-child(1) {
+  /* Orange */
+  background: linear-gradient(180deg,#ff7a18 0%, #ff9b4a 100%);
+  color: #ffffff;
+  border: 1px solid rgba(0,0,0,0.12);
+  box-shadow: 0 4px 14px rgba(255,122,24,0.18);
+}
+.title-badges .pill:nth-child(2) {
+  /* Light green */
+  background: linear-gradient(180deg,#c9f5cf 0%, #96e6a6 100%);
+  color: #0b3d0b;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 4px 14px rgba(14,104,41,0.08);
+}
+
+@media (max-width: 768px) {
+  .title-badges {
+    margin-top: 12px;
+  }
+  .title-badges .pill {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+}
+
+/* Navy overlay variant for title pages */
+.bg-title-page.navy-overlay::before {
+  background: rgba(3,32,63,0.72); /* deep navy overlay for emphasis */
+}
+
+/* Data badges (small academic metrics under title) */
+.data-badges {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+  z-index: 2;
+}
+.data-badges .data-pill {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-family: Montserrat, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  color: #ffffff;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.08);
+}
+.data-badges .data-pill.positive {
+  background: linear-gradient(180deg,#08306f 0%, #0b3d91 100%);
+  box-shadow: 0 8px 22px rgba(3,32,63,0.35);
+}
+.data-badges .data-pill.muted {
+  background: rgba(255,255,255,0.04);
+  color: rgba(255,255,255,0.9);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+@media (max-width: 576px) {
+  .data-badges { flex-direction: column; gap: 8px; }
+  .data-badges .data-pill { font-size: 12px; padding: 5px 8px; }
+}
+
+/* Gallery card styles */
+.gallery-card {
+  background: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 22px rgba(3,18,40,0.06);
+  position: relative;
+}
+.gallery-card.card-white { background: #ffffff; }
+.gallery-card.card-gray { background: #f6f7f9; }
+.gallery-card .card-media { position: relative; }
+.gallery-card .card-media img { display:block; width:100%; height:auto; border-bottom-left-radius: 0; border-bottom-right-radius: 0; }
+
+/* Keep images in natural color for all cards */
+.gallery-card.card-gray .card-media img {
+  filter: none;
+  opacity: 1;
+}
+.gallery-card .overlay-item-gallery { z-index: 4; position: absolute; top: 8px; right: 8px; }
+.gallery-card .card-body { padding: 12px 14px; z-index: 3; position: relative; }
+.gallery-card .card-title { margin: 0; font-size: 15px; font-weight: 700; }
+.gallery-card .card-sub { font-size: 13px; color: rgba(0,0,0,0.6); margin-top:6px; }
+
+.card-doc-title { font-size: 16px; font-weight: 800; margin-bottom:6px; }
+.doc-format { display:inline-block; background:#0b3d91; color:#fff; padding:4px 8px; border-radius:6px; font-weight:700; font-size:12px; margin-bottom:6px; }
+.doc-meta { font-size:12px; color:rgba(0,0,0,0.55); margin-top:6px; }
+.btn-explore { display:inline-block; margin-top:10px; background:transparent; border:1px solid rgba(11,61,145,0.12); color:#0b3d91; padding:8px 12px; border-radius:8px; font-weight:700; text-decoration:none; }
+.btn-explore i { font-size:12px; }
+.btn-explore:hover { background:#0b3d91; color:#fff; border-color:transparent; }
+
+/* Numbered badge (large faded number in corner) */
+.gallery-card.numbered { overflow: visible; }
+.gallery-card.numbered::after {
+  content: attr(data-number);
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  font-size: 84px;
+  font-weight: 800;
+  color: rgba(3,18,40,0.06);
+  transform: rotate(-12deg);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ensure overlay and content sit above the faded number */
+.gallery-card .card-media, .gallery-card .card-body { z-index: 3; position: relative; }
+
+@media (max-width: 768px) {
+  .gallery-card.numbered::after { font-size: 56px; right: 8px; }
+}
+
+@media (max-width: 480px) {
+  .gallery-card.numbered::after { font-size: 40px; top: 6px; right: 6px; }
+}
+
+/* Corner numbered pill labels (Hệ thống Nhãn) */
+.card-pill {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #0b3d91;
+  color: #ffffff;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-weight: 800;
+  font-size: 13px;
+  letter-spacing: 0.4px;
+  z-index: 6;
+  box-shadow: 0 6px 18px rgba(11,61,145,0.18);
+}
+
+@media (max-width: 768px) {
+  .card-pill { font-size: 12px; padding: 5px 9px; top:8px; left:8px; }
+}
+
+@media (max-width: 480px) {
+  .card-pill { font-size: 11px; padding: 4px 8px; top:6px; left:6px; }
 }
 
 
@@ -1486,6 +1811,92 @@ body {padding-right: 0px !important;}
 .label-gallery:hover {
   background-color: #111111;
   color: white;
+}
+
+/* Mockup thumbnail and document UI for Ấn phẩm */
+.pic-blo3.mockup img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0 40px 80px rgba(0,0,0,0.35);
+  transform: perspective(1200px) rotateX(4deg);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+.pic-blo3.mockup:hover img {
+  transform: perspective(1200px) rotateX(0deg) translateY(-6px);
+  box-shadow: 0 50px 120px rgba(0,0,0,0.45);
+}
+
+.doc-label {
+  display: inline-block;
+  background: rgba(0,0,0,0.06);
+  color: #0b3d0b;
+  font-size: 11px;
+  padding: 4px 8px;
+  border-radius: 999px;
+  margin-left: 8px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.meta {
+  color: #8a8a8a;
+  font-size: 13px;
+  margin-top: 6px;
+}
+
+.doc-actions {
+  margin-top: 10px;
+}
+.doc-actions a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 14px;
+  text-decoration: none;
+}
+.btn-doc { background: linear-gradient(180deg,#ff7a18,#ff9b4a); color: #fff; border: none; }
+.btn-read { background: #ffffff; color: #111; border: 1px solid #e6e6e6; }
+.doc-actions a .fa { margin-right: 6px; }
+
+@media (max-width: 768px) {
+  .pic-blo3.mockup img { transform: none; box-shadow: 0 20px 40px rgba(0,0,0,0.25); }
+  .doc-actions a { padding: 7px 10px; font-size: 13px; }
+}
+
+/* Header mockup cover for Publications (3D book cover) */
+.header-dinner {
+  position: relative;
+  overflow: visible;
+}
+.header-dinner .header-mockup {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -20%);
+  width: 320px;
+  z-index: 2;
+  pointer-events: none;
+}
+.header-dinner .header-mockup img {
+  width: 100%;
+  display: block;
+  border-radius: 8px;
+  box-shadow: 0 60px 120px rgba(0,0,0,0.55), 0 12px 30px rgba(0,0,0,0.25);
+  transform: perspective(1200px) rotateX(6deg) translateY(6px);
+}
+.header-dinner .bg1-overlay { z-index: 3; }
+.header-dinner .tit4 { position: relative; z-index: 4; }
+
+@media (max-width: 992px) {
+  .header-dinner .header-mockup { width: 240px; transform: translate(-50%, -10%); }
+}
+
+@media (max-width: 576px) {
+  .header-dinner .header-mockup { display: none; }
 }
 
 .is-actived {
@@ -1624,4 +2035,67 @@ body {padding-right: 0px !important;}
   left: 20px;
   border-radius: 10px;
   background-color: #ec1d25;
+}
+
+/* Use a large serif for the Main Menu section headings and item names */
+.section-mainmenu {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+}
+.section-mainmenu .tit-mainmenu,
+.section-mainmenu .name-item-mainmenu {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  font-weight: 600;
+}
+
+/* Keep menu items in the Main Menu section un-highlighted (no black background or heavy bolding) */
+.section-mainmenu .item-mainmenu,
+.section-mainmenu .name-item-mainmenu {
+  background: transparent !important;
+  font-weight: 400 !important;
+  color: #222222 !important;
+  text-shadow: none !important;
+}
+.section-mainmenu .name-item-mainmenu:hover {
+  color: #ec1d25 !important;
+  text-decoration: none !important;
+  background: transparent !important;
+}
+
+/* Section headings: use Serif for an academic feel (scoped, non-global) */
+.section-mainmenu .tit-mainmenu,
+.section-dinner .tit4,
+.section-lunch .tit4,
+.bg-title-page .tit6 {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+/* Document descriptions and meta: keep Sans-serif for legibility */
+.text-blo3,
+.text-blo3 .txt23,
+.text-blo3 .meta,
+.doc-actions,
+.doc-actions a,
+.meta,
+.txt22,
+.txt23 {
+  font-family: Montserrat, 'Noto Sans', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  color: #545454;
+}
+
+/* Keep document titles (links) visually distinct — slightly bolder */
+.text-blo3 .txt21,
+.name-item-mainmenu {
+  font-family: 'Playfair Display', Georgia, 'Times New Roman', Times, serif;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .section-mainmenu .tit-mainmenu,
+  .section-dinner .tit4,
+  .section-lunch .tit4 {
+    font-size: 20px;
+  }
 }

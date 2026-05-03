@@ -31,6 +31,8 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/custom-signup.css">
+
 <!--===============================================================================================-->
 </head>
 <body class="animsition">
@@ -44,7 +46,7 @@
 					<!-- Logo -->
 					<div class="logo">
 						<a href="index.html">
-							<img src="images/icons/logo.png" alt="IMG-LOGO" data-logofixed="images/icons/logo2.png">
+							<img src="images/icons/logo1.png" alt="IMG-LOGO" data-logofixed="images/icons/logo1.png">
 						</a>
 					</div>
 
@@ -56,38 +58,50 @@
 									<a href="index.html">Trang chủ</a>
 								</li>
 
-								<li>
-									<a href="menu.html">Thực đơn</a>
+								<li class="has-mega">
+									<a href="menu.html" onmousedown="window.location.href='menu.html'">Thư viện <span class="caret">▾</span></a>
+									<div class="mega-menu">
+										<div class="container mega-row">
+											<div class="mega-col">
+												<ul>
+													<li><a href="#">Hợp đồng & Chứng từ</a></li>
+													<li><a href="#">Sách</a></li>
+													<li><a href="#">Logistics</a></li>
+													<li><a href="#">Chuỗi cung ứng</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
 								</li>
 
 								<li>
+									<a href="gallery.html">Tin tức</a>
+								</li>
+								<li>
+									<a href="#">Case Study</a>
+								</li>
+
+								<li>
+									<a href="#">Về chúng tôi</a>
+								</li>
+
+								<!-- <li>
 									<a href="reservation.html">Đặt bàn</a>
 								</li>
 
 								<li>
-									<a href="gallery.html">Thư viện</a>
-								</li>
-
-								<li>
-									<a href="about.html">Giới thiệu</a>
-								</li>
-
-								<li>
-									<a href="blog.html">Tin tức</a>
-								</li>
-
-								<li>
 									<a href="contact.html">Liên hệ</a>
-								</li>
+								</li> -->
 							</ul>
 						</nav>
 					</div>
 
 					<!-- Social -->
 					<div class="social flex-w flex-l-m p-r-20">
-						<a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+						<!-- <a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
 						<a href="#"><i class="fa fa-facebook m-l-21" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-twitter m-l-21" aria-hidden="true"></i></a>
+						<a href="#"><i class="fa fa-twitter m-l-21" aria-hidden="true"></i></a> -->
+						<a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
 
 						<button class="btn-show-sidebar m-l-33 trans-0-4"></button>
 					</div>
@@ -108,87 +122,39 @@
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="menu.html" class="txt19">Thực đơn</a>
+				<a href="menu.html" class="txt19">Thư viện</a>
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="gallery.html" class="txt19">Thư viện</a>
+				<a href="gallery.html" class="txt19">Tin tức</a>
 			</li>
-
 			<li class="t-center m-b-13">
-				<a href="about.html" class="txt19">Giới thiệu</a>
+				<a href="#" class="txt19">Case Study</a>
 			</li>
-
 			<li class="t-center m-b-13">
-				<a href="blog.html" class="txt19">Tin tức</a>
+				<a href="#" class="txt19">Về chúng tôi</a>
+			</li>
 			</li>
 
-			<li class="t-center m-b-33">
-				<a href="contact.html" class="txt19">Liên hệ</a>
-			</li>
-
-			<li class="t-center">
-				<!-- Button3 -->
-					<a href="reservation.html" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
-					Đặt bàn
-				</a>
-			</li>
+			
 		</ul>
 
 		<!-- - -->
-		<div class="gallery-sidebar t-center p-l-60 p-r-60 p-b-40">
-			<!-- - -->
-			<h4 class="txt20 m-b-33">
-					Thư viện
-				</h4>
-
-			<!-- Gallery -->
-			<div class="wrap-gallery-sidebar flex-w">
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-01.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-01.jpg" alt="Thư viện">
-				</a>
-
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-02.jpg" alt="Thư viện">
-				</a>
-
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-03.jpg" alt="Thư viện">
-				</a>
-
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-05.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-05.jpg" alt="Thư viện">
-				</a>
-
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-06.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-06.jpg" alt="Thư viện">
-				</a>
-
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-07.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-07.jpg" alt="Thư viện">
-				</a>
-
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-09.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-09.jpg" alt="Thư viện">
-				</a>
-
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-10.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-10.jpg" alt="Thư viện">
-				</a>
-
-				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-11.jpg" data-lightbox="gallery-footer">
-					<img src="images/photo-gallery-thumb-11.jpg" alt="Thư viện">
-				</a>
-			</div>
-		</div>
+		
 	</aside>
 
 
 	<!-- Title Page -->
-	<section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(images/bg-title-page-01.jpg);">
+	<section class="bg-title-page flex-c-m p-t-160 p-b-80 p-l-15 p-r-15" style="background-image: url(images/logistic/logistic2.png);">
 		<h2 class="tit6 t-center">
-			Thực đơn Pato
+			Thư viện Tri thức Logistics Toàn cầu
 		</h2>
+
+		<!-- Badges: small rounded pills under the title -->
+		<div class="title-badges t-center">
+			<span class="pill">CẬP NHẬT 2024</span>
+			<span class="pill">+5,000 TÀI LIỆU</span>
+		</div>
 	</section>
 
 
@@ -199,165 +165,201 @@
 				<div class="col-md-10 col-lg-6 p-r-35 p-r-15-lg m-l-r-auto">
 					<div class="wrap-item-mainmenu p-b-22">
 						<h3 class="tit-mainmenu tit10 p-b-25">
-							KHAI VỊ
+							Hợp đồng & Chứng từ
 						</h3>
 
 						<!-- Item mainmenu -->
 						<div class="item-mainmenu m-b-36">
 							<div class="flex-w flex-b m-b-3">
 								<a href="#" class="name-item-mainmenu txt21">
-									Hạt thông sbrisalona
+									Hợp đồng mua bán ngoại thương
 								</a>
 
 								<div class="line-item-mainmenu bg3-pattern"></div>
 
-								<div class="price-item-mainmenu txt22">
+								<!-- <div class="price-item-mainmenu txt22">
 									$29.79
-								</div>
+								</div> -->
 							</div>
 
-							<span class="info-item-mainmenu txt23">
+							<!-- <span class="info-item-mainmenu txt23">
 								Sed fermentum eros vitae eros
-							</span>
+							</span> -->
 						</div>
 
 						<!-- Item mainmenu -->
 						<div class="item-mainmenu m-b-36">
 							<div class="flex-w flex-b m-b-3">
 								<a href="#" class="name-item-mainmenu txt21">
-									Salad rau trộn
+									Hóa đơn thương mại
 								</a>
 
 								<div class="line-item-mainmenu bg3-pattern"></div>
 
-								<div class="price-item-mainmenu txt22">
+								<!-- <div class="price-item-mainmenu txt22">
 									$19.35
-								</div>
+								</div> -->
 							</div>
 
-							<span class="info-item-mainmenu txt23">
+							<!-- <span class="info-item-mainmenu txt23">
 								Vị đậm đà, cân bằng
-							</span>
+							</span> -->
 						</div>
 
 						<!-- Item mainmenu -->
 						<div class="item-mainmenu m-b-36">
 							<div class="flex-w flex-b m-b-3">
 								<a href="#" class="name-item-mainmenu txt21">
-									Súp kem thảo mộc
+									Phiếu đóng gói
 								</a>
 
 								<div class="line-item-mainmenu bg3-pattern"></div>
 
-								<div class="price-item-mainmenu txt22">
+								<!-- <div class="price-item-mainmenu txt22">
 									$12.19
-								</div>
+								</div> -->
 							</div>
 
-							<span class="info-item-mainmenu txt23">
+							<!-- <span class="info-item-mainmenu txt23">
 								Mềm mịn, hương vị thảo mộc
-							</span>
+							</span> -->
 						</div>
 
 						<!-- Item mainmenu -->
 						<div class="item-mainmenu m-b-36">
 							<div class="flex-w flex-b m-b-3">
 								<a href="#" class="name-item-mainmenu txt21">
-									Bánh cuộn giòn
+									Vận đơn
 								</a>
 
 								<div class="line-item-mainmenu bg3-pattern"></div>
 
-								<div class="price-item-mainmenu txt22">
+								<!-- <div class="price-item-mainmenu txt22">
 									$21.89
-								</div>
+								</div> -->
 							</div>
 
-							<span class="info-item-mainmenu txt23">
+							<!-- <span class="info-item-mainmenu txt23">
 								Giòn rụm, ăn kèm sốt đặc trưng
-							</span>
+							</span> -->
+						</div>
+
+						<div class="item-mainmenu m-b-36">
+							<div class="flex-w flex-b m-b-3">
+								<a href="#" class="name-item-mainmenu txt21">
+									Giấy chứng nhận xuất xứ
+								</a>
+
+								<div class="line-item-mainmenu bg3-pattern"></div>
+
+								<!-- <div class="price-item-mainmenu txt22">
+									$21.89
+								</div> -->
+							</div>
+
+							<!-- <span class="info-item-mainmenu txt23">
+								Giòn rụm, ăn kèm sốt đặc trưng
+							</span> -->
 						</div>
 					</div>
 
 					<div class="wrap-item-mainmenu p-b-22">
 						<h3 class="tit-mainmenu tit10 p-b-25">
-							ĐỒ UỐNG
+							Phương thức Vận tải
 						</h3>
 
 						<!-- Item mainmenu -->
 						<div class="item-mainmenu m-b-36">
 							<div class="flex-w flex-b m-b-3">
 								<a href="#" class="name-item-mainmenu txt21">
-									Nước ép trái cây
+									Đường biển
 								</a>
 
 								<div class="line-item-mainmenu bg3-pattern"></div>
 
-								<div class="price-item-mainmenu txt22">
+								<!-- <div class="price-item-mainmenu txt22">
 									$29.79
-								</div>
+								</div> -->
 							</div>
 
-							<span class="info-item-mainmenu txt23">
+							<!-- <span class="info-item-mainmenu txt23">
 								Tươi mát, không đường
-							</span>
+							</span> -->
 						</div>
 
 						<!-- Item mainmenu -->
 						<div class="item-mainmenu m-b-36">
 							<div class="flex-w flex-b m-b-3">
 								<a href="#" class="name-item-mainmenu txt21">
-									Cocktail đặc trưng
+									Hàng không
 								</a>
 
 								<div class="line-item-mainmenu bg3-pattern"></div>
 
-								<div class="price-item-mainmenu txt22">
+								<!-- <div class="price-item-mainmenu txt22">
 									$19.35
-								</div>
+								</div> -->
 							</div>
 
-							<span class="info-item-mainmenu txt23">
+							<!-- <span class="info-item-mainmenu txt23">
 								Hương trái cây, dịu ngọt
-							</span>
+							</span> -->
 						</div>
 
 						<!-- Item mainmenu -->
 						<div class="item-mainmenu m-b-36">
 							<div class="flex-w flex-b m-b-3">
 								<a href="#" class="name-item-mainmenu txt21">
-									Sinh tố kem
+									Đường bộ
 								</a>
 
 								<div class="line-item-mainmenu bg3-pattern"></div>
 
-								<div class="price-item-mainmenu txt22">
+								<!-- <div class="price-item-mainmenu txt22">
 									$53.34
-								</div>
+								</div> -->
 							</div>
 
-							<span class="info-item-mainmenu txt23">
+							<!-- <span class="info-item-mainmenu txt23">
 								Nguyên liệu tươi, mịn béo
-							</span>
+							</span> -->
 						</div>
 
 						<!-- Item mainmenu -->
 						<div class="item-mainmenu m-b-36">
 							<div class="flex-w flex-b m-b-3">
 								<a href="#" class="name-item-mainmenu txt21">
-									Cà phê pha tay
+									Đường sắt
 								</a>
 
 								<div class="line-item-mainmenu bg3-pattern"></div>
 
-								<div class="price-item-mainmenu txt22">
+								<!-- <div class="price-item-mainmenu txt22">
 									$62.45
-								</div>
+								</div> -->
 							</div>
 
-							<span class="info-item-mainmenu txt23">
+							<!-- <span class="info-item-mainmenu txt23">
 								Đậm đà, hương rang thơm
-							</span>
+							</span> -->
+						</div>
+
+						<div class="item-mainmenu m-b-36">
+							<div class="flex-w flex-b m-b-3">
+								<a href="#" class="name-item-mainmenu txt21">
+									Đa phương tiện
+								</a>
+
+								<div class="line-item-mainmenu bg3-pattern"></div>
+
+								<!-- <div class="price-item-mainmenu txt22">
+									$62.45
+								</div> -->
+							</div>
+
+							<!-- <span class="info-item-mainmenu txt23">
+								Đậm đà, hương rang thơm
+							</span> -->
 						</div>
 					</div>
 				</div>
@@ -365,203 +367,176 @@
 				<div class="col-md-10 col-lg-6 p-l-35 p-l-15-lg m-l-r-auto">
 					<div class="wrap-item-mainmenu p-b-22">
 						<h3 class="tit-mainmenu tit10 p-b-25">
-							MÓN CHÍNH
+							Sách & Ấn phẩm
 						</h3>
 
 						<!-- Item mainmenu -->
 						<div class="item-mainmenu m-b-36">
 							<div class="flex-w flex-b m-b-3">
 								<a href="#" class="name-item-mainmenu txt21">
-									Cá nướng sốt tiêu
+									Logistics và Quản trị chuỗi cung ứng
 								</a>
 
 								<div class="line-item-mainmenu bg3-pattern"></div>
 
-								<div class="price-item-mainmenu txt22">
+								<!-- <div class="price-item-mainmenu txt22">
 									$31.18
-								</div>
+								</div> -->
 							</div>
 
-							<span class="info-item-mainmenu txt23">
+							<!-- <span class="info-item-mainmenu txt23">
 								Thịt/cá tươi, sốt tiêu xanh
-							</span>
+							</span> -->
 						</div>
 
 						<!-- Item mainmenu -->
 						<div class="item-mainmenu m-b-36">
 							<div class="flex-w flex-b m-b-3">
 								<a href="#" class="name-item-mainmenu txt21">
-									Bò lúc lắc
+									Logistics và Vận tải quốc tế
 								</a>
 
 								<div class="line-item-mainmenu bg3-pattern"></div>
 
-								<div class="price-item-mainmenu txt22">
+								<!-- <div class="price-item-mainmenu txt22">
 									$70.25
-								</div>
+								</div> -->
 							</div>
 
-							<span class="info-item-mainmenu txt23">
+							<!-- <span class="info-item-mainmenu txt23">
 								Thịt bò mềm, sốt đậm đà
-							</span>
+							</span> -->
 						</div>
 
 						<!-- Item mainmenu -->
 						<div class="item-mainmenu m-b-36">
 							<div class="flex-w flex-b m-b-3">
 								<a href="#" class="name-item-mainmenu txt21">
-									Gà quay thảo mộc
+									Logistics: Hành trình khát vọng
 								</a>
 
 								<div class="line-item-mainmenu bg3-pattern"></div>
 
-								<div class="price-item-mainmenu txt22">
+								<!-- <div class="price-item-mainmenu txt22">
 									$36.19
-								</div>
+								</div> -->
 							</div>
 
-							<span class="info-item-mainmenu txt23">
+							<!-- <span class="info-item-mainmenu txt23">
 								Da giòn, thịt ngọt
-							</span>
+							</span> -->
 						</div>
 
 						<!-- Item mainmenu -->
 						<div class="item-mainmenu m-b-36">
 							<div class="flex-w flex-b m-b-3">
 								<a href="#" class="name-item-mainmenu txt21">
-									Mì Ý hải sản
+									Logistics & Supply Chain Management
 								</a>
 
 								<div class="line-item-mainmenu bg3-pattern"></div>
 
-								<div class="price-item-mainmenu txt22">
+								<!-- <div class="price-item-mainmenu txt22">
 									$19.50
-								</div>
+								</div> -->
 							</div>
 
-							<span class="info-item-mainmenu txt23">
+							<!-- <span class="info-item-mainmenu txt23">
 								Hải sản tươi, sốt kem
-							</span>
+							</span> -->
 						</div>
 
 						<!-- Item mainmenu -->
 						<div class="item-mainmenu m-b-36">
 							<div class="flex-w flex-b m-b-3">
 								<a href="#" class="name-item-mainmenu txt21">
-									Cơm chiên đặc biệt
+									Supply Chain Management
 								</a>
 
 								<div class="line-item-mainmenu bg3-pattern"></div>
 
-								<div class="price-item-mainmenu txt22">
+								<!-- <div class="price-item-mainmenu txt22">
 									$29.15
-								</div>
+								</div> -->
 							</div>
 
-							<span class="info-item-mainmenu txt23">
+							<!-- <span class="info-item-mainmenu txt23">
 								Cơm chiên rau củ, hương vị đậm
-							</span>
+							</span> -->
 						</div>
 
-						<!-- Item mainmenu -->
-						<div class="item-mainmenu m-b-36">
-							<div class="flex-w flex-b m-b-3">
-								<a href="#" class="name-item-mainmenu txt21">
-									Sườn nướng mật ong
-								</a>
-
-								<div class="line-item-mainmenu bg3-pattern"></div>
-
-								<div class="price-item-mainmenu txt22">
-									$29.79
-								</div>
-							</div>
-
-							<span class="info-item-mainmenu txt23">
-								Sườn mềm, sốt thơm
-							</span>
-						</div>
-
-						<!-- Item mainmenu -->
-						<div class="item-mainmenu m-b-36">
-							<div class="flex-w flex-b m-b-3">
-								<a href="#" class="name-item-mainmenu txt21">
-									Đậu hũ chiên giòn
-								</a>
-
-								<div class="line-item-mainmenu bg3-pattern"></div>
-
-								<div class="price-item-mainmenu txt22">
-									$19.35
-								</div>
-							</div>
-
-							<span class="info-item-mainmenu txt23">
-								Ngoài giòn, bên trong mềm mịn
-							</span>
-						</div>
+						
+						
 					</div>
 
 					<div class="wrap-item-mainmenu p-b-22">
 						<h3 class="tit-mainmenu tit10 p-b-25">
-							Tráng miệng
+							Mô hình Chuỗi cung ứng
 						</h3>
 
 						<!-- Item mainmenu -->
 						<div class="item-mainmenu m-b-36">
 							<div class="flex-w flex-b m-b-3">
 								<a href="#" class="name-item-mainmenu txt21">
-									Bánh flan
+									Procurement (Mua sắm)
 								</a>
 
 								<div class="line-item-mainmenu bg3-pattern"></div>
 
-								<div class="price-item-mainmenu txt22">
+								<!-- <div class="price-item-mainmenu txt22">
 									$9.79
-								</div>
+								</div> -->
 							</div>
 
-							<span class="info-item-mainmenu txt23">
+							<!-- <span class="info-item-mainmenu txt23">
 								Mềm mịn, caramel thơm
-							</span>
+							</span> -->
 						</div>
 
 						<!-- Item mainmenu -->
 						<div class="item-mainmenu m-b-36">
 							<div class="flex-w flex-b m-b-3">
 								<a href="#" class="name-item-mainmenu txt21">
-									Kem trái cây
+									Sourcing (Tìm nguồn cung ứng)
 								</a>
 
-								<div class="line-item-mainmenu bg3-pattern"></div>
-
-								<div class="price-item-mainmenu txt22">
-									$19.35
-								</div>
+								<div class="line-item-mainmenu bg3-pattern"></div>				
 							</div>
 
-							<span class="info-item-mainmenu txt23">
-								Thanh mát, ít béo
-							</span>
 						</div>
 
 						<!-- Item mainmenu -->
 						<div class="item-mainmenu m-b-36">
 							<div class="flex-w flex-b m-b-3">
 								<a href="#" class="name-item-mainmenu txt21">
-									Bánh ngọt socola
+									Planning (Lập kế hoạch)
 								</a>
 
 								<div class="line-item-mainmenu bg3-pattern"></div>
-
-								<div class="price-item-mainmenu txt22">
-									$5.79
-								</div>
 							</div>
 
-							<span class="info-item-mainmenu txt23">
-								Đậm vị socola, kết cấu mềm xốp
-							</span>
+						</div>
+
+						<div class="item-mainmenu m-b-36">
+							<div class="flex-w flex-b m-b-3">
+								<a href="#" class="name-item-mainmenu txt21">
+									Manufacturing (Sản xuất)
+								</a>
+
+								<div class="line-item-mainmenu bg3-pattern"></div>
+							</div>
+
+						</div>
+
+						<div class="item-mainmenu m-b-36">
+							<div class="flex-w flex-b m-b-3">
+								<a href="#" class="name-item-mainmenu txt21">
+									Tích hợp và phối hợp chuỗi cung ứng
+								</a>
+
+								<div class="line-item-mainmenu bg3-pattern"></div>
+							</div>
+
 						</div>
 					</div>
 				</div>
@@ -572,10 +547,21 @@
 
 	<!-- Lunch -->
 	<section class="section-lunch bgwhite">
-		<div class="header-lunch parallax0 parallax100" style="background-image: url(images/header-menu-01.jpg);">
+		<!-- <div class="header-lunch parallax0 parallax100" style="background-image: url(images/logistic/logistic3.png);">
 			<div class="bg1-overlay t-center p-t-170 p-b-165">
 				<h2 class="tit4 t-center">
-					Bữa trưa
+					Logistic
+				</h2>
+			</div>
+		</div> -->
+
+		<div class="header-dinner parallax0 parallax100" style="background-image: url(images/logistic/logistic3.png);">
+			<div class="header-mockup">
+				<img src="images/logistic/logistic3.png" alt="Mockup Cover">
+			</div>
+			<div class="bg1-overlay t-center p-t-170 p-b-165">
+				<h2 class="tit4 t-center">
+					Logistic
 				</h2>
 			</div>
 		</div>
@@ -585,64 +571,55 @@
 				<div class="col-md-8 col-lg-6 m-l-r-auto">
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/lunch-01.jpg" alt="IMG-MENU"></a>
+						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28 mockup">
+							<a href="#" class="mockup-link"><img src="images/logistic/duonghangkhong.png" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
 							<a href="#" class="txt21 m-b-3">
-								Salad mùa
+								Đường hàng không <span class="doc-label">ONLINE</span>
 							</a>
-
-							<span class="txt23">
-								Rau tươi, sốt đặc biệt
-							</span>
-
-							<span class="txt22 m-t-20">
-								$29.79
-							</span>
+							<div class="meta">Cập nhật: 12/04/2024</div>
+							<div class="doc-actions">
+								<!-- <a href="#" class="btn-doc"><i class="fa fa-download"></i> Tải về tài liệu</a> -->
+								<a href="blog-duonghangkhong.html" class="btn-read"><i class="fa fa-arrow-right"></i> Đọc tiếp</a>
+							</div>
 						</div>
 					</div>
 
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/lunch-03.jpg" alt="IMG-MENU"></a>
+						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28 mockup">
+							<a href="#" class="mockup-link"><img src="images/logistic/duongbien.png" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
 							<a href="#" class="txt21 m-b-3">
-								Bánh mì kẹp
+								Đường biển <span class="doc-label">ONLINE</span>
 							</a>
-
-							<span class="txt23">
-								Nhân thơm, sốt hấp dẫn
-							</span>
-
-							<span class="txt22 m-t-20">
-								$45.09
-							</span>
+							<div class="meta">Cập nhật: 02/05/2026</div>
+							<div class="doc-actions">
+								<!-- <a href="#" class="btn-doc"><i class="fa fa-download"></i> Tải về tài liệu</a> -->
+								<a href="blog-duongbien.html" class="btn-read"><i class="fa fa-arrow-right"></i> Đọc tiếp</a>
+							</div>
 						</div>
 					</div>
 
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/lunch-05.jpg" alt="IMG-MENU"></a>
+						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28 mockup">
+							<a href="#" class="mockup-link"><img src="images/logistic/duongbo.png" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
 							<a href="#" class="txt21 m-b-3">
-								Mì xào thập cẩm
+								Đường bộ <span class="doc-label">ONLINE</span>
 							</a>
-
-							<span class="txt23">
-								Mì xào tươi, đậm vị
-							</span>
-
-							<span class="txt22 m-t-20">
-								$12.75
-							</span>
+							<div class="meta">Cập nhật: 10/12/2025</div>
+							<div class="doc-actions">
+								<!-- <a href="#" class="btn-doc"><i class="fa fa-download"></i> Tải về tài liệu</a> -->
+								<a href="blog-duongbo.html" class="btn-read"><i class="fa fa-arrow-right"></i> Đọc tiếp</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -650,64 +627,37 @@
 				<div class="col-md-8 col-lg-6 m-l-r-auto">
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/lunch-02.jpg" alt="IMG-MENU"></a>
+						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28 mockup">
+							<a href="#" class="mockup-link"><img src="images/logistic/duongsat.png" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
 							<a href="#" class="txt21 m-b-3">
-								Sbrisalona
+								Đường sắt <span class="doc-label">ONLINE</span>
 							</a>
-
-							<span class="txt23">
-								Hương vị đặc trưng của nhà
-							</span>
-
-							<span class="txt22 m-t-20">
-								$29.79
-							</span>
+							<div class="meta">Cập nhật: 20/11/2025</div>
+							<div class="doc-actions">
+								<!-- <a href="#" class="btn-doc"><i class="fa fa-download"></i> Tải về tài liệu</a> -->
+								<a href="blog-duongsat.html" class="btn-read"><i class="fa fa-arrow-right"></i> Đọc tiếp</a>
+							</div>
 						</div>
 					</div>
 
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/lunch-04.jpg" alt="IMG-MENU"></a>
+						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28 mockup">
+							<a href="#" class="mockup-link"><img src="images/logistic/daphuongthuc.png" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
 							<a href="#" class="txt21 m-b-3">
-								Gà sốt cam
+								Đa phương thức <span class="doc-label">ONLINE</span>
 							</a>
-
-							<span class="txt23">
-								Vị chua ngọt hài hòa
-							</span>
-
-							<span class="txt22 m-t-20">
-								$45.09
-							</span>
-						</div>
-					</div>
-
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/lunch-06.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Rau xào tỏi
-							</a>
-
-							<span class="txt23">
-								Rau tươi, tỏi thơm
-							</span>
-
-							<span class="txt22 m-t-20">
-								$12.75
-							</span>
+							<div class="meta">Cập nhật: 05/03/2026</div>
+							<div class="doc-actions">
+								<!-- <a href="#" class="btn-doc"><i class="fa fa-download"></i> Tải về tài liệu</a> -->
+								<a href="blog-daphuongthuc.html" class="btn-read"><i class="fa fa-arrow-right"></i> Đọc tiếp</a>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -718,10 +668,13 @@
 
 	<!-- Dinner -->
 	<section class="section-dinner bgwhite">
-		<div class="header-dinner parallax0 parallax100" style="background-image: url(images/header-menu-02.jpg);">
+		<div class="header-dinner parallax0 parallax100" style="background-image: url(images/logistic/chuoicungung2.png);">
+			<div class="header-mockup">
+				<img src="images/logistic/chuoicungung2.png" alt="Mockup Cover">
+			</div>
 			<div class="bg1-overlay t-center p-t-170 p-b-165">
 				<h2 class="tit4 t-center">
-					Bữa tối
+					CHUỖI CUNG ỨNG
 				</h2>
 			</div>
 		</div>
@@ -731,78 +684,53 @@
 				<div class="col-md-8 col-lg-6 m-l-r-auto">
 					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/dinner-01.jpg" alt="IMG-MENU"></a>
+						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28 mockup">
+							<a href="#" class="mockup-link"><img src="images/logistic/muasam.png" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
 							<a href="#" class="txt21 m-b-3">
-								Sườn nướng mật ong
+								Procurement (Mua sắm) <span class="doc-label">ONLINE</span>
 							</a>
-
-							<span class="txt23">
-								Sườn mềm, vị ngọt nhẹ
-							</span>
-
-							<span class="txt22 m-t-20">
-								$29.79
-							</span>
+							<div class="meta">Cập nhật: 13/10/2025</div>
+							<div class="doc-actions">
+								<!-- <a href="#" class="btn-doc"><i class="fa fa-download"></i> Tải về tài liệu</a> -->
+								<a href="#" class="btn-read"><i class="fa fa-arrow-right"></i> Đọc tiếp</a>
+							</div>
 						</div>
 					</div>
 
-					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/dinner-03.jpg" alt="IMG-MENU"></a>
+						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28 mockup">
+							<a href="#" class="mockup-link"><img src="images/logistic/nguoncungung.png" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
 							<a href="#" class="txt21 m-b-3">
-								Hạt thông Sbrisalona
+								Sourcing (Tìm nguồn cung ứng) <span class="doc-label">ONLINE</span>
 							</a>
-
-							<span class="txt23">
-								Sốt đặc trưng, hương thơm nhẹ
-							</span>
-
-							<span class="txt22 m-t-20">
-								$45.09
-							</span>
+							<div class="meta">Cập nhật: 08/02/2025</div>
+							<div class="doc-actions">
+								<!-- <a href="#" class="btn-doc"><i class="fa fa-download"></i> Tải về tài liệu</a> -->
+								<a href="blog-cungung.html" class="btn-read"><i class="fa fa-arrow-right"></i> Đọc tiếp</a>
+							</div>
 						</div>
 					</div>
 
-					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/dinner-05.jpg" alt="IMG-MENU"></a>
-						</div>
-
-						<div class="text-blo3 size21 flex-col-l-m">
-							<a href="#" class="txt21 m-b-3">
-								Bò sốt vang
-							</a>
-
-							<span class="txt23">
-								Thịt bò ninh mềm, sốt vang đậm đà
-							</span>
-
-							<span class="txt22 m-t-20">
-								$12.75
-							</span>
-						</div>
-					</div>
+					
+					
 				</div>
 
 				<div class="col-md-8 col-lg-6 m-l-r-auto">
 					<!-- Block3 -->
-					<div class="blo3 flex-w flex-col-l-sm m-b-30">
+					<!-- <div class="blo3 flex-w flex-col-l-sm m-b-30">
 						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/dinner-02.jpg" alt="IMG-MENU"></a>
+							<a href="#"><img src="images/logistic/sanxuat.png" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
 							<a href="#" class="txt21 m-b-3">
-								Bánh ngọt socola
+								Manufacturing (Sản xuất)
 							</a>
 
 							<span class="txt23">
@@ -813,49 +741,42 @@
 								$29.79
 							</span>
 						</div>
-					</div>
-
-					<!-- Block3 -->
+					</div> -->
+					
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/dinner-04.jpg" alt="IMG-MENU"></a>
+						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28 mockup">
+							<a href="#" class="mockup-link"><img src="images/logistic/lapkehoach.png" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
 							<a href="#" class="txt21 m-b-3">
-								Hạt thông Sbrisalona
+								Planning (Lập kế hoạch) <span class="doc-label">ONLINE</span>
 							</a>
-
-							<span class="txt23">
-								Vị thơm nhẹ, giòn tan
-							</span>
-
-							<span class="txt22 m-t-20">
-								$45.09
-							</span>
+							<div class="meta">Cập nhật: 10/12/2024</div>
+							<div class="doc-actions">
+								<!-- <a href="#" class="btn-doc"><i class="fa fa-download"></i> Tải về tài liệu</a> -->
+								<a href="blog-lapkehoach.html" class="btn-read"><i class="fa fa-arrow-right"></i> Đọc tiếp</a>
+							</div>
 						</div>
 					</div>
 
-					<!-- Block3 -->
 					<div class="blo3 flex-w flex-col-l-sm m-b-30">
-						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28">
-							<a href="#"><img src="images/dinner-06.jpg" alt="IMG-MENU"></a>
+						<div class="pic-blo3 size20 bo-rad-10 hov-img-zoom m-r-28 mockup">
+							<a href="#" class="mockup-link"><img src="images/logistic/sanxuat.png" alt="IMG-MENU"></a>
 						</div>
 
 						<div class="text-blo3 size21 flex-col-l-m">
 							<a href="#" class="txt21 m-b-3">
-								Rau mùa xào
+								Manufacturing (Sản xuất) <span class="doc-label">ONLINE</span>
 							</a>
-
-							<span class="txt23">
-								Rau tươi, gia vị nhẹ
-							</span>
-
-							<span class="txt22 m-t-20">
-								$12.75
-							</span>
+							<div class="meta">Cập nhật: 1/5/2025</div>
+							<div class="doc-actions">
+								<!-- <a href="#" class="btn-doc"><i class="fa fa-download"></i> Tải về tài liệu</a> -->
+								<a href="blog-sanxuat.html" class="btn-read"><i class="fa fa-arrow-right"></i> Đọc tiếp</a>
+							</div>
 						</div>
 					</div>
+					
 				</div>
 			</div>
 		</div>
@@ -866,169 +787,72 @@
 	<div class="section-signup bg1-pattern p-t-85 p-b-85">
 		<form class="flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5">
 			<span class="txt5 m-10">
-				Đăng ký khuyến mãi
+				Nhận bản tin chuyên gia hàng tuần
 			</span>
 
 			<div class="wrap-input-signup size17 bo2 bo-rad-10 bgwhite pos-relative txt10 m-10">
-				<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email-address" placeholder="Thư điện tử">
+				<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email-address" placeholder="Địa chỉ email của bạn">
 				<i class="fa fa-envelope ab-r-m m-r-18" aria-hidden="true"></i>
 			</div>
 
 			<!-- Button3 -->
 			<button type="submit" class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">
-				Đăng ký
+				Đăng ký ngay
 			</button>
 		</form>
+		<div class="flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5">
+			<span>
+				Đăng ký để nhận các phân tích độc quyền và dữ liệu supply chain mới nhất gửi trực tiếp vào hộp thư của bạn.
+			</span>
+			
+			<span>
+				Chúng tôi cam kết bảo mật thông tin và không gửi thư rác.
+			</span>
+		</div>
 	</div>
 
 
-	<!-- Footer -->
+	<!-- Footer (updated to 4 navy columns) -->
 	<footer class="bg1">
 		<div class="container p-t-40 p-b-70">
 			<div class="row">
-				<div class="col-sm-6 col-md-4 p-t-50">
-					<!-- - -->
-					<h4 class="txt13 m-b-33">
-						Liên hệ
+				<div class="col-sm-6 col-md-3 p-t-50">
+					<h4 class="txt13 m-b-20">
+						<strong>Logiknowledge</strong>
 					</h4>
-
-					<ul class="m-b-70">
-						<li class="txt14 m-b-14">
-							<i class="fa fa-map-marker fs-16 dis-inline-block size19" aria-hidden="true"></i>
-							8th floor, 379 Hudson St, New York, NY 10018
-						</li>
-
-						<li class="txt14 m-b-14">
-							<i class="fa fa-phone fs-16 dis-inline-block size19" aria-hidden="true"></i>
-							(+1) 96 716 6879
-						</li>
-
-						<li class="txt14 m-b-14">
-							<i class="fa fa-envelope fs-13 dis-inline-block size19" aria-hidden="true"></i>
-							contact@site.com
-						</li>
-					</ul>
-
-					<!-- - -->
-					<h4 class="txt13 m-b-32">
-						Giờ mở cửa
-					</h4>
-
-					<ul>
-						<li class="txt14">
-							09:30 AM – 11:00 PM
-						</li>
-
-						<li class="txt14">
-							Hàng ngày
-							</li>
-					</ul>
-				</div>
-
-				<div class="col-sm-6 col-md-4 p-t-50">
-					<!-- - -->
-					<h4 class="txt13 m-b-33">
-						Twitter mới nhất
-					</h4>
-
-					<div class="m-b-25">
-						<span class="fs-13 color2 m-r-5">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</span>
-						<a href="#" class="txt15">
-							@colorlib
-						</a>
-
-						<p class="txt14 m-b-18">
-							Activello là một lựa chọn tốt. Giao diện có slider tích hợp để hiển thị ảnh nổi bật.
-							<a href="#" class="txt15">
-								https://buff.ly/2zaSfAQ
-							</a>
-						</p>
-
-						<span class="txt16">
-							21 Dec 2017
-						</span>
-					</div>
-
-					<div>
-						<span class="fs-13 color2 m-r-5">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</span>
-						<a href="#" class="txt15">
-							@colorlib
-						</a>
-
-						<p class="txt14 m-b-18">
-							Activello là một lựa chọn tốt. Giao diện có slider tích hợp để hiển thị ảnh nổi bật.
-							<a href="#" class="txt15">
-								https://buff.ly/2zaSfAQ
-							</a>
-						</p>
-
-						<span class="txt16">
-							21 Dec 2017
-						</span>
+					<p class="txt14 m-b-15"><em>The Curated Ledger for Global Logistics Professionals</em></p>
+					<div class="p-t-10">
+						<a href="#" class="fs-15 c-white m-r-15"><i class="fa fa-globe" aria-hidden="true"></i></a>
+						<a href="#" class="fs-15 c-white m-r-15"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+						<a href="#" class="fs-15 c-white"><i class="fa fa-at" aria-hidden="true"></i></a>
 					</div>
 				</div>
 
-				<div class="col-sm-6 col-md-4 p-t-50">
-					<!-- - -->
-					<h4 class="txt13 m-b-38">
-							Thư viện
-						</h4>
+				<div class="col-sm-6 col-md-3 p-t-50">
+					<h4 class="txt13 m-b-20">LIÊN HỆ</h4>
+					<ul class="m-b-20">
+						<li class="txt14 m-b-10"><i class="fa fa-envelope m-r-8" aria-hidden="true"></i> <a href="mailto:contact@logiverse.com">contact@logiverse.com</a></li>
+						<li class="txt14 m-b-10"><i class="fa fa-phone m-r-8" aria-hidden="true"></i> <a href="tel:+84123456789">+84 123 456 789</a></li>
+						<li class="txt14"><a href="#">Đăng ký nhận bản tin</a></li>
+					</ul>
+				</div>
 
-					<!-- Gallery footer -->
-					<div class="wrap-gallery-footer flex-w">
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-01.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-01.jpg" alt="Thư viện">
-						</a>
+				<div class="col-sm-6 col-md-3 p-t-50">
+					<h4 class="txt13 m-b-20">MẠNG XÃ HỘI</h4>
+					<ul class="m-b-20">
+						<li class="txt14 m-b-10"><i class="fa fa-youtube-play m-r-8" aria-hidden="true"></i><a href="#">YouTube Channel</a></li>
+						<li class="txt14 m-b-10"><i class="fa fa-wordpress m-r-8" aria-hidden="true"></i><a href="#">WordPress Hub</a></li>
+						<li class="txt14"><i class="fa fa-linkedin m-r-8" aria-hidden="true"></i><a href="#">LinkedIn Profile</a></li>
+					</ul>
+				</div>
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-02.jpg" alt="Thư viện">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-03.jpg" alt="Thư viện">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-04.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-04.jpg" alt="Thư viện">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-05.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-05.jpg" alt="Thư viện">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-06.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-06.jpg" alt="Thư viện">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-07.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-07.jpg" alt="Thư viện">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-08.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-08.jpg" alt="Thư viện">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-09.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-09.jpg" alt="Thư viện">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-10.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-10.jpg" alt="Thư viện">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-11.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-11.jpg" alt="Thư viện">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-12.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-12.jpg" alt="Thư viện">
-						</a>
-					</div>
-
+				<div class="col-sm-6 col-md-3 p-t-50">
+					<h4 class="txt13 m-b-20">PHÁP LÝ</h4>
+					<ul class="m-b-20">
+						<li class="txt14 m-b-10"><i class="fa fa-file-text-o m-r-8" aria-hidden="true"></i><a href="#">Điều khoản sử dụng</a></li>
+						<li class="txt14 m-b-10"><i class="fa fa-lock m-r-8" aria-hidden="true"></i><a href="#">Chính sách bảo mật</a></li>
+						<li class="txt14"><i class="fa fa-copyright m-r-8" aria-hidden="true"></i><a href="#">Bản quyền nội dung</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -1043,8 +867,8 @@
 					</div>
 
 					<div class="txt17 p-r-20 p-t-5 p-b-5">
-						Bản quyền &copy; 2018. Mọi quyền được bảo lưu  |  Giao diện này được tạo bằng <i class="fa fa-heart"></i> bởi <a href="https://colorlib.com" target="_blank">Colorlib</a>
-						</div>
+						Bản quyền &copy; 2018. Mọi quyền được bảo lưu  |  Giao diện này được tạo bằng <i class="fa fa-heart"></i> bởi <a href="https://colorlib.com" target="_blank">Logistics</a>
+					</div>
 				</div>
 			</div>
 		</div>

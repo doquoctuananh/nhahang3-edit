@@ -29,6 +29,7 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/custom-signup.css">
 <!--===============================================================================================-->
 </head>
 <body class="animsition">
@@ -42,7 +43,7 @@
 					<!-- Logo -->
 					<div class="logo">
 						<a href="index.html">
-							<img src="images/icons/logo.png" alt="IMG-LOGO" data-logofixed="images/icons/logo2.png">
+							<img src="images/icons/logo1.png" alt="IMG-LOGO" data-logofixed="images/icons/logo1.png">
 						</a>
 					</div>
 
@@ -54,39 +55,51 @@
 									<a href="index.html">Trang chủ</a>
 								</li>
 
-								<li>
-									<a href="menu.html">Thực đơn</a>
+								<li class="has-mega">
+									<a href="menu.html" onmousedown="window.location.href='menu.html'">Thư viện <span class="caret">▾</span></a>
+									<div class="mega-menu">
+										<div class="container mega-row">
+											<div class="mega-col">
+												<ul>
+													<li><a href="#">Hợp đồng & Chứng từ</a></li>
+													<li><a href="#">Sách</a></li>
+													<li><a href="#">Logistics</a></li>
+													<li><a href="#">Chuỗi cung ứng</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
 								</li>
 
 								<li>
+									<a href="gallery.html">Tin tức</a>
+								</li>
+								<li>
+									<a href="#">Case Study</a>
+								</li>
+
+								<li>
+									<a href="#">Về chúng tôi</a>
+								</li>
+
+
+								<!-- <li>
 									<a href="reservation.html">Đặt bàn</a>
 								</li>
 
 								<li>
-									<a href="gallery.html">Thư viện</a>
-								</li>
-
-								<li>
-									<a href="about.html">Giới thiệu</a>
-								</li>
-
-								<li>
-									<a href="blog.html">Tin tức</a>
-								</li>
-
-								<li>
 									<a href="contact.html">Liên hệ</a>
-								</li>
+								</li> -->
 							</ul>
 						</nav>
 					</div>
 
 					<!-- Social -->
 					<div class="social flex-w flex-l-m p-r-20">
-						<a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
+						<!-- <!-- <a href="#"><i class="fa fa-tripadvisor" aria-hidden="true"></i></a>
 						<a href="#"><i class="fa fa-facebook m-l-21" aria-hidden="true"></i></a>
-						<a href="#"><i class="fa fa-twitter m-l-21" aria-hidden="true"></i></a>
-
+						<a href="#"><i class="fa fa-twitter m-l-21" aria-hidden="true"></i></a> -->
+						<a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
 						<button class="btn-show-sidebar m-l-33 trans-0-4"></button>
 					</div>
 				</div>
@@ -106,41 +119,41 @@
 			</li>
 
 			<li class="t-center m-b-13">
-				<a href="menu.html" class="txt19">Thực đơn</a>
+				<a href="menu.html" class="txt19">Thư viện</a>
 			</li>
 
-			<li class="t-center m-b-13">
+			<!-- <li class="t-center m-b-13">
 				<a href="gallery.html" class="txt19">Thư viện</a>
-			</li>
+			</li> -->
 
 			<li class="t-center m-b-13">
-				<a href="about.html" class="txt19">Giới thiệu</a>
+				<a href="gallery.html" class="txt19">Tin tức</a>
 			</li>
-
 			<li class="t-center m-b-13">
-				<a href="blog.html" class="txt19">Tin tức</a>
+				<a href="#" class="txt19">Case Study</a>
+			</li>
+			<li class="t-center m-b-13">
+				<a href="#" class="txt19">Về chúng tôi</a>
 			</li>
 
-			<li class="t-center m-b-33">
-				<a href="contact.html" class="txt19">Liên hệ</a>
-			</li>
 
-			<li class="t-center">
-				<!-- Button3 -->
+
+			<!-- <li class="t-center">
+				
 					<a href="reservation.html" class="btn3 flex-c-m size13 txt11 trans-0-4 m-l-r-auto">
 					Đặt bàn
 				</a>
-			</li>
+			</li> -->
 		</ul>
 
 		<!-- - -->
-		<div class="gallery-sidebar t-center p-l-60 p-r-60 p-b-40">
-			<!-- - -->
+		<!-- <div class="gallery-sidebar t-center p-l-60 p-r-60 p-b-40">
+			
 			<h4 class="txt20 m-b-33">
 				Gallery
 			</h4>
 
-			<!-- Gallery -->
+			
 			<div class="wrap-gallery-sidebar flex-w">
 				<a class="item-gallery-sidebar wrap-pic-w" href="images/photo-gallery-01.jpg" data-lightbox="gallery-footer">
 					<img src="images/photo-gallery-thumb-01.jpg" alt="GALLERY">
@@ -178,73 +191,37 @@
 					<img src="images/photo-gallery-thumb-11.jpg" alt="GALLERY">
 				</a>
 			</div>
-		</div>
+		</div> -->
 	</aside>
 
 	<!-- Slide1 -->
-	<section class="section-slide">
+	<section class="section-slide" style="padding-top:110px;background:#1b1b1b;color:#fff;">
 		<div class="wrap-slick1">
 			<div class="slick1">
-				<div class="item-slick1 item1-slick1" style="background-image: url(images/slide1-01.jpg);">
-					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="fadeInDown">
-							Chào mừng đến với
-						</span>
-
-						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="fadeInUp">
-							Pato Place
-						</h2>
-
-						<div class="wrap-btn-slide1 animated visible-false" data-appear="zoomIn">
-							<!-- Button1 -->
-							<a href="menu.html" class="btn1 flex-c-m size1 txt3 trans-0-4">
-								Xem thực đơn
-							</a>
+				<div class="item-slick1">
+					<div class="container">
+						<div class="row" style="min-height:380px;">
+							<div class="col-md-6 d-flex align-items-center">
+								<div class="w-100" style="padding-left:24px; padding-right:24px; min-height:360px;">
+									<div class="d-flex flex-column justify-content-center h-100">
+										<h2 class="tit1 m-b-20" style="margin-top:0;color:#fff;font-size:34px;letter-spacing:0;text-transform:none;font-family: serif;">Kiến tạo tri thức chuỗi cung ứng toàn cầu</h2>
+										<p style="margin-bottom:0;color:#e6e6e6;font-size:16px;line-height:1.6;font-family: serif;">LogiVerse là một hệ sinh thái toàn diện kết nối đào tạo, công nghệ và nhân sự, nhằm mục đích thúc đẩy sự phát triển, tự động hóa và mở rộng toàn cầu cho các doanh nghiệp logistics. Được xây dựng như một nền tảng học thuật kết hợp thực tiễn, LogiVerse chú trọng hệ thống hóa tri thức từ các trường đại học hàng đầu thế giới (như MIT, TU Delft, NUS) và tinh gọn chúng để phù hợp với đặc thù vận hành tại Việt Nam.</p>
+										<div class="m-t-20">
+											<a href="#" class="btn btn-light btn-lg" style="background:#fff;color:#111;font-weight:700;margin-right:12px;font-family: serif;">Khám phá ngay</a>
+											<a href="#" class="btn btn-outline-light btn-lg" style="border:1px solid rgba(255,255,255,0.15); color:#fff;background:transparent;font-family: serif;">Tài liệu nghiên cứu</a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 d-flex align-items-center justify-content-center">
+								<div style="background-image: url('images/icons/anhtoancau.png'); background-size: cover; background-position: center; width:100%; max-width:520px; height:360px; border-radius:12px; box-shadow: 0 6px 18px rgba(0,0,0,0.15);"></div>
+							</div>
 						</div>
 					</div>
 				</div>
-
-				<div class="item-slick1 item2-slick1" style="background-image: url(images/master-slides-02.jpg);">
-					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="rollIn">
-							Chào mừng đến với
-						</span>
-
-						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="lightSpeedIn">
-							Pato Place
-						</h2>
-
-						<div class="wrap-btn-slide1 animated visible-false" data-appear="slideInUp">
-							<!-- Button1 -->
-							<a href="menu.html" class="btn1 flex-c-m size1 txt3 trans-0-4">
-								Xem thực đơn
-							</a>
-						</div>
-					</div>
-				</div>
-
-				<div class="item-slick1 item3-slick1" style="background-image: url(images/master-slides-01.jpg);">
-					<div class="wrap-content-slide1 sizefull flex-col-c-m p-l-15 p-r-15 p-t-150 p-b-170">
-						<span class="caption1-slide1 txt1 t-center animated visible-false m-b-15" data-appear="rotateInDownLeft">
-							Chào mừng đến với
-						</span>
-
-						<h2 class="caption2-slide1 tit1 t-center animated visible-false m-b-37" data-appear="rotateInUpRight">
-							Pato Place
-						</h2>
-
-						<div class="wrap-btn-slide1 animated visible-false" data-appear="rotateIn">
-							<!-- Button1 -->
-							<a href="menu.html" class="btn1 flex-c-m size1 txt3 trans-0-4">
-								Xem thực đơn
-							</a>
-						</div>
-					</div>
-				</div>
-
 			</div>
 
-			<div class="wrap-slick1-dots"></div>
+			<!-- <div class="wrap-slick1-dots"></div> -->
 		</div>
 	</section>
 
@@ -255,18 +232,41 @@
 				<div class="col-md-6 p-t-45 p-b-30">
 					<div class="wrap-text-welcome t-center">
 						<span class="tit2 t-center">
-							Nhà hàng Ý
+							Sứ mệnh & Mục tiêu
 						</span>
 
 						<h3 class="tit3 t-center m-b-35 m-t-5">
 							Chào mừng
 						</h3>
 
-						<p class="t-center m-b-22 size3 m-l-r-auto">
-							Chúng tôi luôn đặt trải nghiệm của bạn lên hàng đầu. Hãy tận hưởng không gian ấm cúng và những món ăn tinh tế của chúng tôi.
-						</p>
+									<div class="row m-t-30">
+										<div class="col-6 col-md-3">
+											<div class="p-4 text-center" style="background:#0b3d91;color:#fff;border-radius:8px;">
+												<div style="font-size:22px;line-height:1;font-weight:700;">50,000+</div>
+												<div class="txt14">Lượt tiếp cận</div>
+											</div>
+										</div>
+										<div class="col-6 col-md-3">
+											<div class="p-4 text-center" style="background:#f5f5f5;color:#333;border-radius:8px;">
+												<div style="font-size:22px;line-height:1;font-weight:700;">1,200+</div>
+												<div class="txt14">Bài nghiên cứu</div>
+											</div>
+										</div>
+										<div class="col-6 col-md-3 mt-3 mt-md-0">
+											<div class="p-4 text-center" style="background:#f5f5f5;color:#333;border-radius:8px;">
+												<div style="font-size:22px;line-height:1;font-weight:700;">450+</div>
+												<div class="txt14">Case Study</div>
+											</div>
+										</div>
+										<div class="col-6 col-md-3 mt-3 mt-md-0">
+											<div class="p-4 text-center" style="background:#0b3d91;color:#fff;border-radius:8px;">
+												<div style="font-size:22px;line-height:1;font-weight:700;">30+</div>
+												<div class="txt14">Đối tác toàn cầu</div>
+											</div>
+										</div>
+									</div>
 
-						<a href="about.html" class="txt4">
+						<a href="#" class="txt4">
 							Câu chuyện của chúng tôi
 							<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
 						</a>
@@ -275,7 +275,7 @@
 
 				<div class="col-md-6 p-b-30">
 					<div class="wrap-pic-welcome size2 bo-rad-10 hov-img-zoom m-l-r-auto">
-						<img src="images/our-story-01.jpg" alt="IMG-OUR">
+						<img src="images/logistic/our-story.png" alt="IMG-OUR">
 					</div>
 				</div>
 			</div>
@@ -284,7 +284,7 @@
 
 	<!-- Intro -->
 	<section class="section-intro">
-		<div class="header-intro parallax100 t-center p-t-135 p-b-158" style="background-image: url(images/bg-intro-01.jpg);">
+		<!-- <div class="header-intro parallax100 t-center p-t-135 p-b-158" style="background-image: url(images/bg-intro-01.jpg);">
 						<span class="tit2 p-l-15 p-r-15">
 							Khám phá
 						</span>
@@ -292,7 +292,7 @@
 			<h3 class="tit4 t-center p-l-15 p-r-15 p-t-3">
 				Pato Place
 			</h3>
-		</div>
+		</div> -->
 
 		<div class="content-intro bg-white p-t-77 p-b-133">
 			<div class="container">
@@ -301,16 +301,16 @@
 						<!-- Block1 -->
 						<div class="blo1">
 							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-								<a href="#"><img src="images/intro-01.jpg" alt="IMG-INTRO"></a>
+									<a href="#"><img src="images/logistic/sachlogistic.png" alt="IMG-INTRO" style="width:100%;height:200px;object-fit:cover;"></a>
 							</div>
 
 							<div class="wrap-text-blo1 p-t-35">
 								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
-									Nhà hàng lãng mạn
+									Sách
 								</h4></a>
 
 								<p class="m-b-20">
-									Không gian ấm áp, phong cách sang trọng, mang đến trải nghiệm ẩm thực đáng nhớ.
+									Sách logistics cung cấp kiến thức toàn diện về tối ưu hóa chuỗi cung ứng, vận chuyển và kho bãi.
 								</p>
 
 								<a href="#" class="txt4">
@@ -325,16 +325,16 @@
 						<!-- Block1 -->
 						<div class="blo1">
 							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-								<a href="#"><img src="images/intro-02.jpg" alt="IMG-INTRO"></a>
+								<a href="#"><img src="images/logistic/logistic.png" alt="IMG-INTRO"></a>
 							</div>
 
 							<div class="wrap-text-blo1 p-t-35">
 								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
-											Món ăn ngon
+									Logistics
 									</h4></a>
 
 								<p class="m-b-20">
-									Chúng tôi phục vụ những món ăn tươi ngon, chế biến tinh tế bởi đội ngũ đầu bếp kinh nghiệm.
+									Logistics là việc lập kế hoạch, kiểm soát luồng hàng hóa và thông tin từ điểm đầu đến tay người dùng.
 								</p>
 
 								<a href="#" class="txt4">
@@ -348,17 +348,17 @@
 					<div class="col-md-4 p-t-30">
 						<!-- Block1 -->
 						<div class="blo1">
-							<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
-								<a href="#"><img src="images/intro-04.jpg" alt="IMG-INTRO"></a>
-							</div>
+								<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom">
+									<a href="#"><img src="images/logistic/chuoicungung.png" alt="IMG-INTRO" style="width:100%;height:200px;object-fit:cover;"></a>
+								</div>
 
 							<div class="wrap-text-blo1 p-t-35">
 								<a href="#"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
-											Rượu vang đỏ yêu thích
+									Chuỗi cung ứng
 								</h4></a>
 
 								<p class="m-b-20">
-									Thưởng thức rượu vang đỏ với hương vị phong phú và phong cách tinh tế.
+									Hệ thống quản lý dòng chảy hàng hóa, thông tin từ nhà sản xuất đến người tiêu dùng hiệu quả.
 								</p>
 
 								<a href="#" class="txt4">
@@ -383,59 +383,53 @@
 				</span>
 
 				<h3 class="tit5 t-center m-t-2">
-					Thực đơn
+					Thư viện Tri thức Logistics Toàn cầu
 				</h3>
 			</div>
 
 			<div class="row">
-				<div class="col-md-8">
+				<div class="col-md-12">
 					<div class="row">
 						<div class="col-sm-6">
-							<!-- Item our menu -->
 							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-								<img src="images/our-menu-01.jpg" alt="IMG-MENU">
-
-								<!-- Button2 -->
+								<img src="images/logistic/hopdongchungtu.png" alt="IMG-MENU">
+								<span style="position:absolute;top:12px;left:12px;background:#0b3d91;color:#fff;padding:6px 10px;border-radius:20px;font-size:12px;font-weight:700;text-transform:uppercase;z-index:3;">CẬP NHẬT 2024</span>
 									<a href="#" class="btn2 flex-c-m txt5 ab-c-m size4">
-									Bữa trưa
+									Hợp đồng & Chứng từ
 								</a>
 							</div>
 						</div>
 
 						<div class="col-sm-6">
-							<!-- Item our menu -->
 							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-								<img src="images/our-menu-05.jpg" alt="IMG-MENU">
+								<img src="images/logistic/sachanpham.png" alt="IMG-MENU">
+								<span style="position:absolute;top:12px;left:12px;background:#ff6f00;color:#fff;padding:6px 10px;border-radius:20px;font-size:12px;font-weight:700;text-transform:uppercase;z-index:3;">+5,000 tài liệu</span>
 
-								<!-- Button2 -->
-								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size5">
-									Bữa tối
+									<a href="#" class="btn2 flex-c-m txt5 ab-c-m size5">
+									Sách & Ấn phẩm
 								</a>
 							</div>
 						</div>
 
 						<div class="col-12">
-							<!-- Item our menu -->
 							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
-								<img src="images/our-menu-13.jpg" alt="IMG-MENU">
+								<img src="images/logistic/phuongthucvantai.png" alt="IMG-MENU">
+								<span style="position:absolute;top:12px;left:12px;background:#28a745;color:#fff;padding:6px 10px;border-radius:20px;font-size:12px;font-weight:700;text-transform:uppercase;z-index:3;">MỚI</span>
 
-								<!-- Button2 -->
-								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size6">
-									Giờ vàng
+									<a href="#" class="btn2 flex-c-m txt5 ab-c-m size6">
+									Phương thức Vận tải
 								</a>
 							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-md-4">
+				<!-- <div class="col-md-4">
 					<div class="row">
 						<div class="col-12">
-							<!-- Item our menu -->
 							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
 								<img src="images/our-menu-08.jpg" alt="IMG-MENU">
 
-								<!-- Button2 -->
 								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size7">
 									Đồ uống
 								</a>
@@ -443,11 +437,9 @@
 						</div>
 
 						<div class="col-12">
-							<!-- Item our menu -->
 							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
 								<img src="images/our-menu-10.jpg" alt="IMG-MENU">
 
-								<!-- Button2 -->
 								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size8">
 									Khai vị
 								</a>
@@ -455,18 +447,16 @@
 						</div>
 
 						<div class="col-12">
-							<!-- Item our menu -->
 							<div class="item-ourmenu bo-rad-10 hov-img-zoom pos-relative m-t-30">
 								<img src="images/our-menu-16.jpg" alt="IMG-MENU">
 
-								<!-- Button2 -->
 								<a href="#" class="btn2 flex-c-m txt5 ab-c-m size9">
 									Tráng miệng
 								</a>
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 			</div>
 
 		</div>
@@ -480,94 +470,44 @@
 				<div class="item-slick2 item1-slick2" style="background-image: url(images/bg-event-01.jpg);">
 					<div class="wrap-content-slide2 p-t-115 p-b-208">
 						<div class="container">
-							<!-- - -->
 							<div class="title-event t-center m-b-52">
-								<span class="tit2 p-l-15 p-r-15">
+								<!-- <span class="tit2 p-l-15 p-r-15">
 									Sắp tới
-								</span>
+								</span> -->
 
 								<h3 class="tit6 t-center p-l-15 p-r-15 p-t-3">
-									Sự kiện
+									Case Study
 								</h3>
 							</div>
 
-							<!-- Block2 -->
-							<div class="blo2 flex-w flex-str flex-col-c-m-lg animated visible-false" data-appear="zoomIn">
-								<!-- Pic block2 -->
-								<a href="#" class="wrap-pic-blo2 bg1-blo2" style="background-image: url(images/event-02.jpg);">
-									<div class="time-event size10 txt6 effect1">
-										<span class="txt-effect1 flex-c-m t-center">
-											08:00 PM Tuesday - 21 November 2018
-										</span>
-									</div>
-								</a>
-
-								<!-- Text block2 -->
-								<div class="wrap-text-blo2 flex-col-c-m p-l-40 p-r-40 p-t-45 p-b-30">
-										<h4 class="tit7 t-center m-b-10">
-											Đêm rượu vang
-										</h4>
-
-										<p class="t-center">
-											Tham gia những đêm rượu vang đặc sắc với tuyển chọn rượu hảo hạng và không gian ấm cúng.
-										</p>
-
-									<div class="flex-sa-m flex-w w-full m-t-40">
-										<div class="size11 flex-col-c-m">
-											<span class="dis-block t-center txt7 m-b-2 days">
-												25
-											</span>
-
-											<span class="dis-block t-center txt8">
-												Ngày
-											</span>
-										</div>
-
-										<div class="size11 flex-col-c-m">
-											<span class="dis-block t-center txt7 m-b-2 hours">
-												12
-											</span>
-
-											<span class="dis-block t-center txt8">
-												Giờ
-											</span>
-										</div>
-
-										<div class="size11 flex-col-c-m">
-											<span class="dis-block t-center txt7 m-b-2 minutes">
-												59
-											</span>
-
-											<span class="dis-block t-center txt8">
-												Phút
-											</span>
-										</div>
-
-										<div class="size11 flex-col-c-m">
-											<span class="dis-block t-center txt7 m-b-2 seconds">
-												56
-											</span>
-
-											<span class="dis-block t-center txt8">
-												Giây
-											</span>
+								<!-- Block2: two card-style case-study tiles -->
+								<div class="row">
+									<div class="col-md-6 p-t-15">
+										<div style="position:relative;border-radius:12px;overflow:hidden;height:320px;background-image:url('images/logistic/cangcatlai.png');background-size:cover;background-position:center;">
+											<div style="position:absolute;inset:0;background:rgba(0,0,0,0.45);"></div>
+											<div style="position:absolute;left:20px;right:20px;bottom:20px;color:#fff;z-index:3;">
+												<h4 style="margin:0;font-family:serif;font-size:20px;font-weight:700;">Cảng Cát Lái — Hoạt động & Quy trình</h4>
+												<p class="txt4" style="margin-top:8px;color:rgba(255,255,255,0.9)"><a href="menu.html#logistics" style="color:inherit;text-decoration:underline;">Xem chi tiết <i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i></a></p>
+											</div>
 										</div>
 									</div>
-
-									<a href="#" class="txt4 m-t-40">
-										Xem chi tiết
-										<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-									</a>
+									<div class="col-md-6 p-t-15">
+										<div style="position:relative;border-radius:12px;overflow:hidden;height:320px;background-image:url('images/logistic/chuoicungungvinamilk.png');background-size:cover;background-position:center;">
+											<div style="position:absolute;inset:0;background:rgba(0,0,0,0.45);"></div>
+											<div style="position:absolute;left:20px;right:20px;bottom:20px;color:#fff;z-index:3;">
+												<h4 style="margin:0;font-family:serif;font-size:20px;font-weight:700;">Chuỗi cung ứng Vinamilk — Tối ưu lưu thông</h4>
+												<p class="txt4" style="margin-top:8px;color:rgba(255,255,255,0.9)"><a href="menu.html#chuoi-cung-ung" style="color:inherit;text-decoration:underline;">Xem chi tiết <i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i></a></p>
+											</div>
+										</div>
+									</div>
 								</div>
-							</div>
 						</div>
 					</div>
 				</div>
 
-				<div class="item-slick2 item2-slick2" style="background-image: url(images/bg-event-02.jpg);">
+				<!-- <div class="item-slick2 item2-slick2" style="background-image: url(images/bg-event-02.jpg);">
 					<div class="wrap-content-slide2 p-t-115 p-b-208">
 						<div class="container">
-							<!-- - -->
 							<div class="title-event t-center m-b-52">
 								<span class="tit2 p-l-15 p-r-15">
 									Sắp tới
@@ -578,9 +518,7 @@
 								</h3>
 							</div>
 
-							<!-- Block2 -->
 							<div class="blo2 flex-w flex-str flex-col-c-m-lg animated visible-false" data-appear="fadeInDown">
-								<!-- Pic block2 -->
 								<a href="#" class="wrap-pic-blo2 bg2-blo2" style="background-image: url(images/event-06.jpg);">
 									<div class="time-event size10 txt6 effect1">
 										<span class="txt-effect1 flex-c-m">
@@ -589,7 +527,6 @@
 									</div>
 								</a>
 
-								<!-- Text block2 -->
 								<div class="wrap-text-blo2 flex-col-c-m p-l-40 p-r-40 p-t-45 p-b-30">
 									<h4 class="tit7 t-center m-b-10">
 										Đêm thưởng rượu vang
@@ -649,12 +586,11 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
-				<div class="item-slick2 item3-slick2" style="background-image: url(images/bg-event-04.jpg);">
+				<!-- <div class="item-slick2 item3-slick2" style="background-image: url(images/bg-event-04.jpg);">
 					<div class="wrap-content-slide2 p-t-115 p-b-208">
 						<div class="container">
-							<!-- - -->
 							<div class="title-event t-center m-b-52">
 								<span class="tit2 p-l-15 p-r-15">
 									Sắp tới
@@ -665,9 +601,7 @@
 								</h3>
 							</div>
 
-							<!-- Block2 -->
 							<div class="blo2 flex-w flex-str flex-col-c-m-lg animated visible-false" data-appear="rotateInUpLeft">
-								<!-- Pic block2 -->
 								<a href="#" class="wrap-pic-blo2 bg3-blo2" style="background-image: url(images/event-01.jpg);">
 									<div class="time-event size10 txt6 effect1">
 										<span class="txt-effect1 flex-c-m">
@@ -676,7 +610,6 @@
 									</div>
 								</a>
 
-								<!-- Text block2 -->
 								<div class="wrap-text-blo2 flex-col-c-m p-l-40 p-r-40 p-t-45 p-b-30">
 									<h4 class="tit7 t-center m-b-10">
 										Đêm rượu vang
@@ -736,7 +669,7 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</div> -->
 
 			</div>
 
@@ -745,7 +678,7 @@
 	</section>
 
 	<!-- Booking -->
-	<section class="section-booking bg1-pattern p-t-100 p-b-110">
+	<!-- <section class="section-booking bg1-pattern p-t-100 p-b-110">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-6 p-b-30">
@@ -762,7 +695,6 @@
 					<form class="wrap-form-booking">
 						<div class="row">
 							<div class="col-md-6">
-								<!-- Date -->
 								<span class="txt9">
 									Ngày
 								</span>
@@ -772,13 +704,11 @@
 									<i class="btn-calendar fa fa-calendar ab-r-m hov-pointer m-r-18" aria-hidden="true"></i>
 								</div>
 
-								<!-- Time -->
 								<span class="txt9">
 									Thời gian
 								</span>
 
 								<div class="wrap-inputtime size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<!-- Select2 -->
 									<select class="selection-1" name="time">
 										<option>9:00</option>
 										<option>9:30</option>
@@ -802,13 +732,11 @@
 									</select>
 								</div>
 
-								<!-- People -->
 								<span class="txt9">
 									Số người
 								</span>
 
 								<div class="wrap-inputpeople size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<!-- Select2 -->
 									<select class="selection-1" name="people">
 										<option>1 người</option>
 										<option>2 người</option>
@@ -827,7 +755,6 @@
 							</div>
 
 							<div class="col-md-6">
-								<!-- Name -->
 								<span class="txt9">
 									Name
 								</span>
@@ -836,7 +763,6 @@
 									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="name" placeholder="Tên">
 								</div>
 
-								<!-- Phone -->
 								<span class="txt9">
 									Phone
 								</span>
@@ -845,19 +771,17 @@
 									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="phone" placeholder="Điện thoại">
 								</div>
 
-								<!-- Email -->
 								<span class="txt9">
 									Email
 								</span>
 
 								<div class="wrap-inputemail size12 bo2 bo-rad-10 m-t-3 m-b-23">
-									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email" placeholder="Thư điện tử">
+									<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email" placeholder="Địa chỉ email của bạn">
 								</div>
 							</div>
 						</div>
 
 						<div class="wrap-btn-booking flex-c-m m-t-6">
-							<!-- Button3 -->
 							<button type="submit" class="btn3 flex-c-m size13 txt11 trans-0-4">
 								Đặt bàn
 							</button>
@@ -872,11 +796,10 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<!-- Review -->
-	<section class="section-review p-t-115">
-		<!-- - -->
+	<!-- <section class="section-review p-t-115">
 			<div class="title-review t-center m-b-2">
 			<span class="tit2 p-l-15 p-r-15">
 				Khách hàng nói
@@ -887,7 +810,6 @@
 			</h3>
 		</div>
 
-		<!-- - -->
 		<div class="wrap-slick3">
 			<div class="slick3">
 				<div class="item-slick3 item1-slick3">
@@ -978,11 +900,11 @@
 
 			<div class="wrap-slick3-dots m-t-30"></div>
 		</div>
-	</section>
+	</section> -->
 
 
 	<!-- Video -->
-	<section class="section-video parallax100" style="background-image: url(images/bg-cover-video-02.jpg);">
+	<!-- <section class="section-video parallax100" style="background-image: url(images/bg-cover-video-02.jpg);">
 		<div class="content-video t-center p-t-225 p-b-250">
 				<span class="tit2 p-l-15 p-r-15">
 					Khám phá
@@ -998,107 +920,71 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 
-	<!-- Blog -->
+	<!-- Blog (featured + mini-cards) -->
 	<section class="section-blog bg-white p-t-115 p-b-123">
 		<div class="container">
-			<div class="title-section-ourmenu t-center m-b-22">
-				<span class="tit2 t-center">
-					Tin tức mới nhất
-				</span>
-
-				<h3 class="tit5 t-center m-t-2">
-					Tin tức
-				</h3>
+			<div class="d-flex justify-content-end align-items-center mb-3">
+				<span style="background:#0b3d91;color:#fff;padding:6px 12px;border-radius:20px;font-weight:700;font-size:12px;">CẬP NHẬT THỜI GIAN THỰC</span>
+				<a href="blog.html" class="btn btn-sm btn-outline-primary ml-3">Xem thêm</a>
 			</div>
 
 			<div class="row">
-				<div class="col-md-4 p-t-30">
-					<!-- Block1 -->
+				<div class="col-md-8">
+					<!-- Featured article -->
 					<div class="blo1">
 						<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom pos-relative">
-							<a href="blog-detail.html"><img src="images/blog-01.jpg" alt="IMG-INTRO"></a>
-
-							<div class="time-blog">
-								21 Dec 2017
-							</div>
+							<a href="blog-detail.html"><img src="images/logistic/logistic4.png" alt="Khủng hoảng Kênh đào Suez" style="width:100%;height:420px;object-fit:cover;border-radius:8px;"></a>
 						</div>
 
-						<div class="wrap-text-blo1 p-t-35">
-							<a href="blog-detail.html"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
-								Địa điểm thưởng rượu vang tốt nhất
-							</h4></a>
+						<div class="wrap-text-blo1 p-t-20">
+							<a href="blog-detail.html"><h3 class="txt5 color0-hov trans-0-4 m-b-13">Khủng hoảng Kênh đào Suez — Tác động và bài học</h3></a>
 
 							<p class="m-b-20">
-								Khám phá những địa điểm tuyệt vời để thưởng rượu vang trong không gian ấm cúng và phục vụ chuyên nghiệp.
+								Sự cố chặn Kênh đào Suez đã cho thấy rõ ràng mức độ nhạy cảm của chuỗi cung ứng toàn cầu: chỉ một điểm nghẽn trên tuyến hàng hải chính cũng có thể gây tắc nghẽn hàng trăm tàu, làm tăng chi phí vận tải và trì hoãn giao hàng trên quy mô lớn. Bài phân tích này xem xét ảnh hưởng tức thời đến giá cước và lịch trình giao nhận, đồng thời bàn về các biện pháp chiến lược cần ưu tiên: đa dạng hóa tuyến vận chuyển, tăng năng lực lưu trữ trung gian, nâng cao khả năng điều phối đa phương thức và số hóa các quy trình điều hành để phản ứng nhanh hơn trước rủi ro tương tự trong tương lai.
 							</p>
 
-							<a href="blog-detail.html" class="txt4">
-								Đọc tiếp
-								<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-							</a>
+							<a href="blog-detail.html" class="txt4">Đọc phân tích đầy đủ <i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i></a>
 						</div>
 					</div>
 				</div>
 
-				<div class="col-md-4 p-t-30">
-					<!-- Block1 -->
-					<div class="blo1">
-						<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom pos-relative">
-							<a href="blog-detail.html"><img src="images/blog-02.jpg" alt="IMG-INTRO"></a>
-
-							<div class="time-blog">
-								15 Dec 2017
-							</div>
+				<div class="col-md-4">
+					<!-- Mini-cards list -->
+					<div class="mb-3 d-flex align-items-start">
+						<img src="images/logistic/chuoicungung.png" alt="thumb" style="width:72px;height:72px;object-fit:cover;border-radius:6px;margin-right:12px;">
+						<div>
+							<a href="#" class="d-block" style="font-weight:600;color:#222;">Giá cước vận tải tăng mạnh</a>
+							<div class="text-muted" style="font-size:12px;margin-top:6px;">21 Dec 2017</div>
 						</div>
+					</div>
 
-						<div class="wrap-text-blo1 p-t-35">
-							<a href="blog-detail.html"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
-								Trứng & Phô mai
-							</h4></a>
+					<div class="mb-3 d-flex align-items-start">
+						<img src="images/logistic/chuoicungung2.png" alt="thumb" style="width:72px;height:72px;object-fit:cover;border-radius:6px;margin-right:12px;">
+						<div>
+							<a href="#" class="d-block" style="font-weight:600;color:#222;">Chuỗi cung ứng và rủi ro địa chính trị</a>
+							<div class="text-muted" style="font-size:12px;margin-top:6px;">15 Dec 2017</div>
+						</div>
+					</div>
 
-							<p class="m-b-20">
-								Nguyên liệu chọn lọc, chế biến tinh tế, mang đến hương vị hài hòa.
-							</p>
+					<div class="mb-3 d-flex align-items-start">
+						<img src="images/logistic/cangcatlai.png" alt="thumb" style="width:72px;height:72px;object-fit:cover;border-radius:6px;margin-right:12px;">
+						<div>
+							<a href="#" class="d-block" style="font-weight:600;color:#222;">Số hóa kho bãi: lời giải giảm rủi ro</a>
+							<div class="text-muted" style="font-size:12px;margin-top:6px;">12 Dec 2017</div>
+						</div>
+					</div>
 
-							<a href="blog-detail.html" class="txt4">
-								Đọc tiếp
-								<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-							</a>
+					<div class="mb-3 d-flex align-items-start">
+						<img src="images/logistic/our-story.png" alt="thumb" style="width:72px;height:72px;object-fit:cover;border-radius:6px;margin-right:12px;">
+						<div>
+							<a href="#" class="d-block" style="font-weight:600;color:#222;">Chiến lược đa phương thức trong 2026</a>
+							<div class="text-muted" style="font-size:12px;margin-top:6px;">02 May 2026</div>
 						</div>
 					</div>
 				</div>
-
-				<div class="col-md-4 p-t-30">
-					<!-- Block1 -->
-					<div class="blo1">
-						<div class="wrap-pic-blo1 bo-rad-10 hov-img-zoom pos-relative">
-							<a href="blog-detail.html"><img src="images/blog-03.jpg" alt="IMG-INTRO"></a>
-
-							<div class="time-blog">
-								12 Dec 2017
-							</div>
-						</div>
-
-						<div class="wrap-text-blo1 p-t-35">
-							<a href="blog-detail.html"><h4 class="txt5 color0-hov trans-0-4 m-b-13">
-								Phong cách tiệc cưới
-							</h4></a>
-
-							<p class="m-b-20">
-								Phong cách trang trí tinh tế, phù hợp cho những buổi tiệc đặc biệt.
-							</p>
-
-							<a href="blog-detail.html" class="txt4">
-								Đọc tiếp
-								<i class="fa fa-long-arrow-right m-l-10" aria-hidden="true"></i>
-							</a>
-						</div>
-					</div>
-				</div>
-
 			</div>
 		</div>
 	</section>
@@ -1108,169 +994,72 @@
 	<div class="section-signup bg1-pattern p-t-85 p-b-85">
 		<form class="flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5">
 			<span class="txt5 m-10">
-				Đăng ký khuyến mãi
+				Nhận bản tin chuyên gia hàng tuần
 			</span>
 
 			<div class="wrap-input-signup size17 bo2 bo-rad-10 bgwhite pos-relative txt10 m-10">
-				<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email-address" placeholder="Thư điện tử">
+				<input class="bo-rad-10 sizefull txt10 p-l-20" type="text" name="email-address" placeholder="Địa chỉ email của bạn">
 				<i class="fa fa-envelope ab-r-m m-r-18" aria-hidden="true"></i>
 			</div>
 
 			<!-- Button3 -->
 			<button type="submit" class="btn3 flex-c-m size18 txt11 trans-0-4 m-10">
-				Đăng ký
+				Đăng ký ngay
 			</button>
 		</form>
+		<div class="flex-c-m flex-w flex-col-c-m-lg p-l-5 p-r-5">
+			<span>
+				Đăng ký để nhận các phân tích độc quyền và dữ liệu supply chain mới nhất gửi trực tiếp vào hộp thư của bạn.
+			</span>
+			
+			<span>
+				Chúng tôi cam kết bảo mật thông tin và không gửi thư rác.
+			</span>
+		</div>
 	</div>
 
 
-	<!-- Footer -->
+	<!-- Footer (updated to 4 navy columns) -->
 	<footer class="bg1">
 		<div class="container p-t-40 p-b-70">
 			<div class="row">
-				<div class="col-sm-6 col-md-4 p-t-50">
-					<!-- - -->
-					<h4 class="txt13 m-b-33">
-						Liên hệ
+				<div class="col-sm-6 col-md-3 p-t-50">
+					<h4 class="txt13 m-b-20">
+						<strong>Logiknowledge</strong>
 					</h4>
-
-					<ul class="m-b-70">
-						<li class="txt14 m-b-14">
-							<i class="fa fa-map-marker fs-16 dis-inline-block size19" aria-hidden="true"></i>
-							8th floor, 379 Hudson St, New York, NY 10018
-						</li>
-
-						<li class="txt14 m-b-14">
-							<i class="fa fa-phone fs-16 dis-inline-block size19" aria-hidden="true"></i>
-							(+1) 96 716 6879
-						</li>
-
-						<li class="txt14 m-b-14">
-							<i class="fa fa-envelope fs-13 dis-inline-block size19" aria-hidden="true"></i>
-							contact@site.com
-						</li>
-					</ul>
-
-					<!-- - -->
-					<h4 class="txt13 m-b-32">
-						Giờ mở cửa
-					</h4>
-
-					<ul>
-						<li class="txt14">
-							09:30 AM – 11:00 PM
-						</li>
-
-						<li class="txt14">
-							Every Day
-						</li>
-					</ul>
-				</div>
-
-				<div class="col-sm-6 col-md-4 p-t-50">
-					<!-- - -->
-					<h4 class="txt13 m-b-33">
-						Twitter mới nhất
-					</h4>
-
-					<div class="m-b-25">
-						<span class="fs-13 color2 m-r-5">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</span>
-						<a href="#" class="txt15">
-							@colorlib
-						</a>
-
-						<p class="txt14 m-b-18">
-							Activello là một lựa chọn tốt. Giao diện có slider tích hợp để hiển thị ảnh nổi bật.
-							<a href="#" class="txt15">
-								https://buff.ly/2zaSfAQ
-							</a>
-						</p>
-
-						<span class="txt16">
-							21 Dec 2017
-						</span>
-					</div>
-
-					<div>
-						<span class="fs-13 color2 m-r-5">
-							<i class="fa fa-twitter" aria-hidden="true"></i>
-						</span>
-						<a href="#" class="txt15">
-							@colorlib
-						</a>
-
-						<p class="txt14 m-b-18">
-							Activello là một lựa chọn tốt. Giao diện có slider tích hợp để hiển thị ảnh nổi bật.
-							<a href="#" class="txt15">
-								https://buff.ly/2zaSfAQ
-							</a>
-						</p>
-
-						<span class="txt16">
-							21 Dec 2017
-						</span>
+					<p class="txt14 m-b-15"><em>The Curated Ledger for Global Logistics Professionals</em></p>
+					<div class="p-t-10">
+						<a href="#" class="fs-15 c-white m-r-15"><i class="fa fa-globe" aria-hidden="true"></i></a>
+						<a href="#" class="fs-15 c-white m-r-15"><i class="fa fa-share-alt" aria-hidden="true"></i></a>
+						<a href="#" class="fs-15 c-white"><i class="fa fa-at" aria-hidden="true"></i></a>
 					</div>
 				</div>
 
-				<div class="col-sm-6 col-md-4 p-t-50">
-					<!-- - -->
-					<h4 class="txt13 m-b-38">
-						Thư viện
-					</h4>
+				<div class="col-sm-6 col-md-3 p-t-50">
+					<h4 class="txt13 m-b-20">LIÊN HỆ</h4>
+					<ul class="m-b-20">
+						<li class="txt14 m-b-10"><i class="fa fa-envelope m-r-8" aria-hidden="true"></i> <a href="mailto:contact@logiverse.com">contact@logiverse.com</a></li>
+						<li class="txt14 m-b-10"><i class="fa fa-phone m-r-8" aria-hidden="true"></i> <a href="tel:+84123456789">+84 123 456 789</a></li>
+						<li class="txt14"><a href="#">Đăng ký nhận bản tin</a></li>
+					</ul>
+				</div>
 
-					<!-- Gallery footer -->
-					<div class="wrap-gallery-footer flex-w">
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-01.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-01.jpg" alt="GALLERY">
-						</a>
+				<div class="col-sm-6 col-md-3 p-t-50">
+					<h4 class="txt13 m-b-20">MẠNG XÃ HỘI</h4>
+					<ul class="m-b-20">
+						<li class="txt14 m-b-10"><i class="fa fa-youtube-play m-r-8" aria-hidden="true"></i><a href="#">YouTube Channel</a></li>
+						<li class="txt14 m-b-10"><i class="fa fa-wordpress m-r-8" aria-hidden="true"></i><a href="#">WordPress Hub</a></li>
+						<li class="txt14"><i class="fa fa-linkedin m-r-8" aria-hidden="true"></i><a href="#">LinkedIn Profile</a></li>
+					</ul>
+				</div>
 
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-02.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-02.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-03.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-03.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-04.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-04.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-05.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-05.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-06.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-06.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-07.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-07.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-08.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-08.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-09.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-09.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-10.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-10.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-11.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-11.jpg" alt="GALLERY">
-						</a>
-
-						<a class="item-gallery-footer wrap-pic-w" href="images/photo-gallery-12.jpg" data-lightbox="gallery-footer">
-							<img src="images/photo-gallery-thumb-12.jpg" alt="GALLERY">
-						</a>
-					</div>
-
+				<div class="col-sm-6 col-md-3 p-t-50">
+					<h4 class="txt13 m-b-20">PHÁP LÝ</h4>
+					<ul class="m-b-20">
+						<li class="txt14 m-b-10"><i class="fa fa-file-text-o m-r-8" aria-hidden="true"></i><a href="#">Điều khoản sử dụng</a></li>
+						<li class="txt14 m-b-10"><i class="fa fa-lock m-r-8" aria-hidden="true"></i><a href="#">Chính sách bảo mật</a></li>
+						<li class="txt14"><i class="fa fa-copyright m-r-8" aria-hidden="true"></i><a href="#">Bản quyền nội dung</a></li>
+					</ul>
 				</div>
 			</div>
 		</div>
@@ -1285,8 +1074,8 @@
 					</div>
 
 					<div class="txt17 p-r-20 p-t-5 p-b-5">
-							Bản quyền &copy; 2018. Mọi quyền được bảo lưu  |  Giao diện này được tạo bằng <i class="fa fa-heart"></i> bởi <a href="https://colorlib.com" target="_blank">Colorlib</a>
-						</div>
+						Bản quyền &copy; 2018. Mọi quyền được bảo lưu  |  Giao diện này được tạo bằng <i class="fa fa-heart"></i> bởi <a href="https://colorlib.com" target="_blank">Logistics</a>
+					</div>
 				</div>
 			</div>
 		</div>

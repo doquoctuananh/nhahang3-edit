@@ -192,6 +192,49 @@
         });
     });
 
-    
+    // Highlight active menu item based on current URL
+    (function() {
+        var path = window.location.pathname.split('/').pop();
+        if (path === '') path = 'index.html';
+
+        $('.main_menu a').each(function() {
+            var href = $(this).attr('href').split('/').pop();
+            if (href === path) {
+                $(this).addClass('active');
+            } else {
+                $(this).removeClass('active');
+                $(this).css('color', '#4a4a4a');
+            }
+        });
+
+        // Optional: visually set active on click before navigation
+        $('.main_menu a').on('click', function() {
+            $('.main_menu a').removeClass('active').css('color', '#4a4a4a');
+            $(this).addClass('active').css('color', '#111111');
+        });
+    })();
+
+    /* Click handler to toggle mega submenu on tap/click */
+    (function(){
+        $('.main_menu').on('click', '.has-mega > a', function(e){
+            var $li = $(this).parent();
+            // On small screens, allow normal navigation; on desktop, toggle open
+            if ($(window).width() > 992) {
+                e.preventDefault();
+                if ($li.hasClass('open')) $li.removeClass('open');
+                else {
+                    $('.has-mega.open').removeClass('open');
+                    $li.addClass('open');
+                }
+            }
+        });
+
+        // close when clicking outside
+        $(document).on('click', function(e){
+            if ($(e.target).closest('.has-mega').length === 0) {
+                $('.has-mega.open').removeClass('open');
+            }
+        });
+    })();
 
 })(jQuery);
